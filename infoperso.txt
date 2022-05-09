@@ -1,0 +1,10 @@
+Page d'accueil => menu de navigation : Biographie, Actualités, Implants, Ressources, Contact, Newsletter, Zone de recherche
+    footer => logo, mentions légales, copyright
+Biographie : Histoire perso, naissance, malentendante, école, surdité, après opérations. Aujourd'hui
+Actualités : parler de ce qui se passe aujourd'hui au niveau de la surdité, et du quotidien si il y a du nouveau. Parler de ce qui se passe autour de soi, des échanges.
+Implants: histoire de l'implant, schéma, explications, associations etc.
+ressources : ressources des informations que j'ai utilisé, droits d'auteur.
+Contact : informations, formulaire
+Newsletter : inscription au site pour recevoir les dernières Actualités
+Barre de recherche
+Logo à créer : idée => oreille avec des fleurs, ou des animaux. + implants
