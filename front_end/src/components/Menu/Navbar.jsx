@@ -1,8 +1,7 @@
 import React from 'react'
-
+import './styles/navbar.css'
 function Navbar() {
   return (
-    <div className='container bg-info mb-3'>
         <div className="navbar">
             <ul>
                 <li><a href="#">ACCUEIL</a></li>
@@ -13,7 +12,6 @@ function Navbar() {
                 <li><a href="">S'INSCRIRE</a></li>
             </ul>
         </div>
-    </div>
   )
 }
 
