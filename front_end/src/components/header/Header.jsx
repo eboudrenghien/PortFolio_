@@ -4,7 +4,7 @@ import './styles/header.css'
 function Header() {
   return (
     <div className='header'>
-        <h1>LA SURDITÉ selon Esther</h1>
+        <h1>La surdité selon Esther</h1>
         
     </div>
   )
