@@ -4,12 +4,14 @@
   height: 100px;
   background-color: #d5b6df;
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
   display: flex;
-  justify-content: center;
+  
   margin: 0;
   padding: 0;
   list-style: none;

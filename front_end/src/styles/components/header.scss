@@ -5,14 +5,58 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        font-size: 56px;
         color: #35096e;
         font-family: 'Parisienne', cursive;
     }
 }
-.background {
+
+.categories {
     width: 100%;
-    height: 35px;
-    margin-top: -30px;
+    height: 400px;
+    margin-top: -45px;
     background: #E8D7F1;
     box-shadow: 2px 1px 15px 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    .biographie {
+        width: 400px;
+        height: 300px;
+        background-color: $color6;
+    }
+    .actualites {
+        width: 400px;
+        height: 300px;
+        background-color: $color6;
+    }
+    .implants {
+        width: 400px;
+        height: 300px;
+        background-color: $color6;
+    }
 }
+    .histoire {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $police2;
+        
+        h1 {
+            font-family : $police1;
+            color: $color1;
+            font-weight: 400;
+        }
+
+        p {
+            color: $color3;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 100px;
+            margin-left: 100px;
+            padding: 30px;
+        }
+    }

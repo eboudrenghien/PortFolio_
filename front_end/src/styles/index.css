@@ -11,16 +11,57 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  font-size: 56px;
   color: #35096e;
   font-family: "Parisienne", cursive;
 }
 
-.background {
+.categories {
   width: 100%;
-  height: 35px;
-  margin-top: -30px;
+  height: 400px;
+  margin-top: -45px;
   background: #E8D7F1;
   box-shadow: 2px 1px 15px 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories .biographie {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+.categories .actualites {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+.categories .implants {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+
+.histoire {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+}
+.histoire h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #4A306D;
+  font-weight: 400;
+}
+.histoire p {
+  color: #7645AC;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 30px;
 }
 
 .navbar {
@@ -28,11 +69,13 @@
   height: 100px;
   background-color: #d5b6df;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
   display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -52,6 +95,7 @@ ul li a {
   padding: 0;
   margin: 0;
   font-family: "Poiret One", cursive;
+  display: flex;
 }
 
 .title {
@@ -62,16 +106,57 @@ ul li a {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  font-size: 56px;
   color: #35096e;
   font-family: "Parisienne", cursive;
 }
 
-.background {
+.categories {
   width: 100%;
-  height: 35px;
-  margin-top: -30px;
+  height: 400px;
+  margin-top: -45px;
   background: #E8D7F1;
   box-shadow: 2px 1px 15px 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories .biographie {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+.categories .actualites {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+.categories .implants {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+
+.histoire {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+}
+.histoire h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #4A306D;
+  font-weight: 400;
+}
+.histoire p {
+  color: #7645AC;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

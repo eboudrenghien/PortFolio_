@@ -6,12 +6,14 @@ import Sidebar from '../../sidebar/Sidebar'
 
 function Home() {
   return (
+    <React.Fragment>
+      <Header />
       <div className='home'>
-        <Header/>
-        <Post/>
-        <Sidebar/> 
+        <Post />
+        <Sidebar /> 
       </div>
-  )
+    </React.Fragment>  
+  );
 }
 
 export default Home
