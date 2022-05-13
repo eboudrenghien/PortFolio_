@@ -8,6 +8,7 @@ function Header() {
       <div className='title'>
         <h1>La surdité selon Esther</h1>
       <div className='background'></div>
+      
       </div>
     </div>
   )
