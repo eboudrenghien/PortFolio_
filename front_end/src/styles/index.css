@@ -4,14 +4,14 @@
 }
 
 .title {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .title h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  font-size: 56px;
+  font-size: 4rem;
   color: #35096e;
   font-family: "Parisienne", cursive;
 }
@@ -19,79 +19,7 @@
 .categories {
   width: 100%;
   height: 400px;
-  margin-top: -45px;
-  background: #E8D7F1;
-  box-shadow: 2px 1px 15px 1px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.categories .biographie {
-  width: 400px;
-  height: 300px;
-  background-color: rgb(205, 143, 226);
-}
-.categories .actualites {
-  width: 400px;
-  height: 300px;
-  background-color: rgb(205, 143, 226);
-}
-.categories .implants {
-  width: 400px;
-  height: 300px;
-  background-color: rgb(205, 143, 226);
-}
-
-.navbar {
-  width: 100%;
-  height: 100px;
-  background-color: #d5b6df;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-ul li {
-  margin-right: 50px;
-}
-ul li a {
-  color: #4A306D;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Poiret One", cursive;
-}
-
-.home {
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.title {
-  margin-top: 20px;
-}
-.title h1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  font-size: 56px;
-  color: #35096e;
-  font-family: "Parisienne", cursive;
-}
-
-.categories {
-  width: 100%;
-  height: 400px;
-  margin-top: -45px;
+  margin-top: -50px;
   background: #E8D7F1;
   box-shadow: 2px 1px 15px 1px;
   display: flex;
@@ -130,7 +58,101 @@ ul li a {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 26px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 30px;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #d5b6df;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  margin-right: 50px;
+}
+ul li a {
+  color: #4A306D;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poiret One", cursive;
+}
+
+.home {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.title {
+  margin-top: 15px;
+}
+.title h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-size: 4rem;
+  color: #35096e;
+  font-family: "Parisienne", cursive;
+}
+
+.categories {
+  width: 100%;
+  height: 400px;
+  margin-top: -50px;
+  background: #E8D7F1;
+  box-shadow: 2px 1px 15px 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories .biographie {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+.categories .actualites {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+.categories .implants {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(205, 143, 226);
+}
+
+.histoire {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.histoire h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #4A306D;
+  font-weight: 400;
+}
+.histoire p {
+  color: #7645AC;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 26px;
   margin-right: 100px;
   margin-left: 100px;
   padding: 30px;

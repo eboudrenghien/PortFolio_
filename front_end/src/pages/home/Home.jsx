@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from '../../header/Header'
-import Post from '../../posts/Posts'
-import Sidebar from '../../sidebar/Sidebar'
+import Header from '../../components/header/Header'
+import Post from '../../components/posts/Posts'
 
 
 function Home() {
@@ -10,7 +9,6 @@ function Home() {
       <Header />
       <div className='home'>
         <Post />
-        <Sidebar /> 
       </div>
     </React.Fragment>  
   );

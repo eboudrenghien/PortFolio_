@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import Home from './components/pages/home/Home';
+import Footer from './components/footer/Footer';
+
 import Navbar from './components/Menu/Navbar';
+import Home from './pages/home/Home';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Navbar/>
-        <Home/>
+        < Home />
+        < Footer />
       </div>
     );
   }
