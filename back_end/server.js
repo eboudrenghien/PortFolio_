@@ -1,18 +1,48 @@
-const MongoClient = require ("mongodb").MongoClient;
-const assert = require ("assert")
+// const { MongoClient, ServerApiVersion } = require('mongodb');
+// const uri = "mongodb+srv://laSurdite:<password>@surdite.vqcnm.mongodb.net/?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
 
-const url = "mongodb://localhost:27017"
+const express = require('express')
+const bodyParser = require('body-parser')
+const dotenv = require('dotenv')
+const mongoose = require('mongoose')
 
-// Base de données
-const dbName = "LaSurdite"
+dotenv.config()
+const PORT = 5000
 
-const client = new MongoClient(url)
+const app = express()
 
-client.connect ((err) => {
-    assert.equal(null, err)
-    console.log("La connexion au serveur a été réalisé avec succès");
 
-    const db = client.db(dbName)
+// app.set('view engine', 'ejs')
 
-    client.close()
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static("public"))
+
+mongoose
+    .connect(process.env.mongo_url, {
+    
+        useUnifiedTopology: true,
+    })
+    .then(console.log("Connexion à MongoDB"))
+    .catch((err) => console.log(err))
+
+const actualitesSchema = {
+    "title": String,
+    "content": String
+}
+
+const Actualites = mongoose.model("Actualites", actualitesSchema)
+app.get("/Actualites", (req, res) => {
+    Actualites.find ((err, foundActualites) => { 
+        res.send(foundActualites)
+    })
+})
+
+app.listen(PORT, () => {
+    console.log("Le serveur démarre sur le port http://localhost:5000");
 })

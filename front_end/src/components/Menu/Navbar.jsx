@@ -4,12 +4,12 @@ function Navbar() {
   return (
         <div className="navbar">
             <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="">BIOGRAPHIE</a></li>
-                <li><a href="">ACTUALITÉS</a></li>
-                <li><a href="">IMPLANTS</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><a href="">S'INSCRIRE</a></li>
+                <li>ACCUEIL</li>
+                <li>BIOGRAPHIE</li>
+                <li>ACTUALITÉS</li>
+                <li>IMPLANTS</li>
+                <li>CONTACT</li>
+                <li>S'INSCRIRE</li>
             </ul>
         </div>
   )
