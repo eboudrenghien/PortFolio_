@@ -18,11 +18,16 @@ ul {
 
   li {
       margin-right: 50px;
-      color: #4A306D;
       text-decoration: none;
+      color: #4A306D;
       font-size: 24px;
       font-weight: bold;
       font-family: $police2;
       cursor: pointer;
+      a {
+        list-style-type: none;
+        text-decoration: none;
+        color: #4A306D;
+      }
   }
 }
