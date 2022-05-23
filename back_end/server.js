@@ -1,48 +1,32 @@
-// const { MongoClient, ServerApiVersion } = require('mongodb');
-// const uri = "mongodb+srv://laSurdite:<password>@surdite.vqcnm.mongodb.net/?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
+//jshint esversion:6
 
-const express = require('express')
-const bodyParser = require('body-parser')
-const dotenv = require('dotenv')
-const mongoose = require('mongoose')
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
+const mongoose = require('mongoose');
+require("dotenv").config({ path: "./.env" })
+const app = express();
 
-dotenv.config()
-const PORT = 5000
+app.set('view engine', 'ejs');
 
-const app = express()
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(express.static("public"));
 
+mongoose.connect(process.env.URL, {useNewUrlParser: true})
 
-// app.set('view engine', 'ejs')
-
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static("public"))
-
-mongoose
-    .connect(process.env.mongo_url, {
-    
-        useUnifiedTopology: true,
-    })
-    .then(console.log("Connexion à MongoDB"))
-    .catch((err) => console.log(err))
-
-const actualitesSchema = {
-    "title": String,
-    "content": String
+const articleSchema = {
+    titre : String,
+    contenu : String
 }
+const Article = mongoose.model("Article", articleSchema)
+//TODO
 
-const Actualites = mongoose.model("Actualites", actualitesSchema)
-app.get("/Actualites", (req, res) => {
-    Actualites.find ((err, foundActualites) => { 
-        res.send(foundActualites)
+app.get("/articles", (req, res) => {
+    Article.find((err, foundArticles) => {
+        console.log(foundArticles);
     })
 })
 
-app.listen(PORT, () => {
-    console.log("Le serveur démarre sur le port http://localhost:5000");
-})
+app.listen(5000, function() {
+  console.log("Le serveur est connecté sur le port 5000 => http://localhost:5000/articles");
+});
