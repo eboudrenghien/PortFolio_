@@ -8,3 +8,9 @@ Contact : informations, formulaire
 Newsletter : inscription au site pour recevoir les dernières Actualités
 Barre de recherche
 Logo à créer : idée => oreille avec des fleurs, ou des animaux. + implants
+
+-----------------------------------
+Mercredi 18 Mai 2022
+Base du site terminée. 
+À modifier : Footer, quand je clique sur les réseaux sociax faire en sorte que ça ouvre sur un nouvel onglet.
+
