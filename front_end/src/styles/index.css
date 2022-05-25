@@ -110,6 +110,26 @@ ul li a {
   margin: 0;
 }
 
+.post {
+  max-width: 350px;
+  min-width: 350px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 5px 15px #4A306D;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.post h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.post p {
+  font-size: 18px;
+}
+
 .title {
   margin-top: 15px;
 }
