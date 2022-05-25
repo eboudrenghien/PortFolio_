@@ -71,24 +71,46 @@ app.delete("/actualites",);
 app.route("/actualites/:articleTitre")
 
     .get((req, res) => {
-       Article.findOne({titre: req.params.articleTitre}, (err, foundArticle) => {
-           if (foundArticle) {
-               res.send(foundArticle)
-           } else {
-               res.send("Aucun article correspond à ce titre n'a été trouvé sur le blog")
-           }
-       });
+        Article.findOne({ titre: req.params.articleTitre }, (err, foundArticle) => {
+            if (foundArticle) {
+                res.send(foundArticle)
+            } else {
+                res.send("Aucun article correspond à ce titre n'a été trouvé sur le blog")
+            }
+        });
     })
 
-// maj de l'article
+    // maj de l'article
     .put((req, res) => {
-        Article.updateOne({titre: req.params.articleTitre},{titre: req.body.titre, contenu: req.body.contenu},{overwrite: true},(err) => {
+        Article.updateOne({ titre: req.params.articleTitre }, { titre: req.body.titre, contenu: req.body.contenu }, (err) => {
             if (!err) {
-                res.end("L'article a été mis à jour.")
+                res.send("L'article a été mis à jour.")
+            } else {
+                res.send("L'article n'a pas pu être mis à jour")
             }
-        });  
-    });
+        });
+    })
 
-app.listen(process.env.PORT, function () {
-    console.log("Le serveur est connecté sur le port 5000 => http://localhost:5000/actualites");
-});
+    .patch((req, res) => {
+        Article.updateMany({ titre: req.params.articleTitre }, { $set: req.body }, (err) => {
+            if (!err) {
+                res.send("Les champs ont bien été mis à jour.")
+            } else {
+                res.send("Un problème a été rencontré")
+            }
+        });
+    })
+
+    .delete((req, res) => {
+        Article.deleteOne({titre: req.params.articleTitre}, (err) => {
+            if (!err) {
+                res.send("L'article a bien été supprimé")
+            } else {
+                res.send("L'article n'a pas pu être supprimé")
+            }
+        })
+    })
+
+    app.listen(process.env.PORT, function () {
+        console.log("Le serveur est connecté sur le port 5000 => http://localhost:5000/actualites");
+    });
