@@ -1,45 +1,15 @@
 import React from 'react'
-import Post from '../components/post/Post'
+import Posts from '../components/Posts'
+import Write from '../components/Write'
 
 function Actualites() {
   return (
     <div className='actualites'>
-
-    <h1 className='actualites-titre'>Toutes les actualités</h1>
+    
     <div className="container-posts">
-        <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
-          <Post>
-          <h2>Premier article</h2>
-          </Post>
+      <h1>Toutes les actualités</h1>
+      <Write/>
+       <Posts/>
           
     </div>
 

@@ -1,6 +1,16 @@
 .actualites {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+        font-family: $police3;
+        font-size: 40px;
+        color: $color1;
+     
+    }
+    
 }
