@@ -80,7 +80,7 @@ body {
   background-color: #d5b6df;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -103,6 +103,18 @@ ul li a {
   list-style-type: none;
   text-decoration: none;
   color: #4A306D;
+}
+
+.connexion li {
+  background-color: #4A306D;
+  padding: 15px;
+}
+.connexion li a {
+  color: #d5b6df;
+}
+.connexion li:hover {
+  background-color: #2e0f57;
+  color: #d5b6df;
 }
 
 .home {
@@ -352,6 +364,227 @@ footer p ul {
   font-weight: bold;
   border: none;
   border-radius: 10%;
+}
+
+.settings {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  color: #2e0f57;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsPP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.iconPP {
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.settingsTitre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.settingsTitre .settingsUpdateTitre {
+  font-family: "Parisienne", cursive;
+  font-size: 38px;
+}
+.settingsTitre .settingsDeleteTitre {
+  margin-top: 15px;
+}
+
+.settingsInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.settingsForm input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #2e0f57;
+  background-color: #E8D7F1;
+  text-align: start;
+  font-size: 18px;
+  color: #2e0f57;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.settingsForm input:hover {
+  background-color: #4A306D;
+  color: #E8D7F1;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.settingsForm .settingsSubmit {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #E8D7F1;
+  color: #2e0f57;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  border: 2px solid #2e0f57;
+  cursor: pointer;
+}
+.settingsForm .settingsSubmit:hover {
+  background-color: #4A306D;
+  color: #E8D7F1;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginForm input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #2e0f57;
+  background-color: #E8D7F1;
+  text-align: start;
+  font-size: 18px;
+  color: #2e0f57;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.loginForm input:hover {
+  background-color: #4A306D;
+  color: #E8D7F1;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginButton {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #E8D7F1;
+  color: #2e0f57;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  border: 2px solid #2e0f57;
+  cursor: pointer;
+}
+.loginButton:hover {
+  background-color: #4A306D;
+}
+.loginButton a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #2e0f57;
+}
+.loginButton a:hover {
+  color: #d5b6df;
+}
+
+.loginRegisterButton {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #E8D7F1;
+  color: #2e0f57;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  border: 2px solid #2e0f57;
+  cursor: pointer;
+}
+.loginRegisterButton:hover {
+  background-color: #4A306D;
+}
+.loginRegisterButton a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #2e0f57;
+}
+.loginRegisterButton a:hover {
+  color: #d5b6df;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registerForm input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #2e0f57;
+  background-color: #E8D7F1;
+  text-align: start;
+  font-size: 18px;
+  color: #2e0f57;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.registerForm input:hover {
+  background-color: #4A306D;
+  color: #E8D7F1;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerButton {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #E8D7F1;
+  color: #2e0f57;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  border: 2px solid #2e0f57;
+  cursor: pointer;
+}
+.registerButton:hover {
+  background-color: #4A306D;
+  color: #E8D7F1;
+}
+
+.registerRegisterButton {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #E8D7F1;
+  color: #2e0f57;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  border: 2px solid #2e0f57;
+  cursor: pointer;
+}
+.registerRegisterButton:hover {
+  background-color: #4A306D;
+  color: #E8D7F1;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,7 +5,7 @@
   background-color: #d5b6df;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -30,4 +30,17 @@ ul {
         color: #4A306D;
       }
   }
+}
+.connexion {
+  li {
+    background-color: $color1;
+    padding: 15px;
+    a {
+      color: $color5;
+    }&:hover {
+    background-color: $color2;
+    color: $color5;
+  }
+  }
+  
 }

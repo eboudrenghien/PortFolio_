@@ -1,0 +1,72 @@
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    input {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 15px;
+        
+        border: 2px solid $color2;
+        background-color: $color7;
+        text-align: start;
+        font-size: 18px;
+        color: $color2;
+        font-family: $police4;
+        
+       
+
+        &:hover {
+            background-color: $color1;
+            color: $color7; 
+            font-family: $police4;
+        }
+    }
+   
+} 
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registerButton {
+    
+       margin-top: 10px;
+        padding: 10px;
+        font-size: 24px;
+        background-color: $color7;
+        color: $color2;
+        font-family: $police2;
+        font-weight: bold;
+        border: 2px solid $color2;
+        
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color1;
+            color: $color7;
+        }
+    }
+
+.registerRegisterButton{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: $color7;
+    color: $color2;
+    font-family: $police2;
+    font-weight: bold;
+    border: 2px solid $color2;
+ 
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color1;
+        color: $color7;
+    }
+}

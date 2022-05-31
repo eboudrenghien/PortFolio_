@@ -7,23 +7,34 @@ import Biographie from './pages/Biographie'
 import Actualites from './pages/Actualites';
 import Implants from './pages/Implants'
 import Contact from './pages/Contact'
-import {Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Menu/Navbar';
 import Footer from './components/footer/Footer';
+import Settings from './pages/Settings';
+import Login from './pages/Login';
+import Register from './pages/Register.jsx';
+import Post from './components/post/Post.jsx'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+
+          <Route exact path="/" element={<Home />} />
+          <Route path="/senregistrer" element={<Register />} />
+          <Route path="/connexion" element={<Login />} />
+          <Route path="/reglages" element={<Settings />} />
           <Route path="/biographie" element={<Biographie />} />
           <Route path="/actualites" element={<Actualites />} />
+          <Route path="/actualites/:id" element={<Post/>} />
           <Route path="/implants" element={<Implants />} />
           <Route path="/contact" element={<Contact />} />
+
         </Routes>
-        <Footer/>
+
+        <Footer />
       </div>
     );
   }
