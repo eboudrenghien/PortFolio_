@@ -5,7 +5,9 @@ const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 require("dotenv").config({ path: "./.env" })
 const authRoute = require ("./routes/auth")
-
+const userRoute = require ("./routes/users")
+const postRoute = require ("./routes/posts")
+const multer = require ("multer")
 const app = express();
 
 app.use(express.json())
@@ -18,7 +20,23 @@ mongoose
     .then(console.log("Connexion au mongoDB"))
     .catch((err) => console.log(err))
 
+    //stockage d'images - Problème rencontrer, quand je clique pour choisir mon image sur le dossier, ça me ferme la fenêtre Postman
+const storage = multer.diskStorage({
+    destination:(req, file, cb) => {
+        cb(null, "images")
+    }, filename:(req, file, cb) => {
+        cb(null, req.body.nom)
+    }
+})
+
+const upload = multer ({storage: storage})
+app.post("/back_end/upload", upload.single("file", (req, res) => {
+    res.status(200).json("L'image a bien été téléchargé")
+}))
+
     app.use("/back_end/auth", authRoute)
+    app.use("/back_end/users", userRoute)
+    app.use("/back_end/posts", postRoute)
 
     app.listen(process.env.PORT, function () {
         console.log("Le serveur est connecté sur le port 5000 => http://localhost:5000");

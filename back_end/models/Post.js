@@ -18,7 +18,7 @@ const PostSchema = new mongoose.Schema({
         required: true,
     },
 },
-    { timestamp: true } // date de maj
+    { timestamps: true } // date de maj
 
 )
 
