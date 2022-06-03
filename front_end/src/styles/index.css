@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   height: 1000px;
+  background-color: #b6865a;
 }
 
 .footer {
@@ -22,7 +23,7 @@ body {
   align-items: center;
   padding: 10px;
   font-size: 4rem;
-  color: #35096e;
+  color: #57260f;
   font-family: "Parisienne", cursive;
 }
 
@@ -30,7 +31,7 @@ body {
   width: 100%;
   height: 400px;
   margin-top: -50px;
-  background: #E8D7F1;
+  background: #f1e9d7;
   box-shadow: 2px 1px 15px 1px;
   display: flex;
   justify-content: space-around;
@@ -39,17 +40,17 @@ body {
 .categories .biographie {
   width: 400px;
   height: 300px;
-  background-color: rgb(205, 143, 226);
+  background-color: rgb(214, 176, 126);
 }
 .categories .actualites {
   width: 400px;
   height: 300px;
-  background-color: rgb(205, 143, 226);
+  background-color: rgb(214, 176, 126);
 }
 .categories .implants {
   width: 400px;
   height: 300px;
-  background-color: rgb(205, 143, 226);
+  background-color: rgb(214, 176, 126);
 }
 
 .histoire {
@@ -60,11 +61,11 @@ body {
 }
 .histoire h1 {
   font-family: "Josefin Sans", sans-serif;
-  color: #4A306D;
+  color: #6d4630;
   font-weight: 400;
 }
 .histoire p {
-  color: #7645AC;
+  color: #f5e0d1;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -77,11 +78,12 @@ body {
 .navbar {
   width: 100%;
   height: 100px;
-  background-color: #d5b6df;
+  background-color: rgb(214, 176, 126);
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -93,7 +95,7 @@ ul {
 ul li {
   margin-right: 50px;
   text-decoration: none;
-  color: #4A306D;
+  color: #6d4630;
   font-size: 24px;
   font-weight: bold;
   font-family: "Poiret One", cursive;
@@ -102,19 +104,19 @@ ul li {
 ul li a {
   list-style-type: none;
   text-decoration: none;
-  color: #4A306D;
+  color: #6d4630;
 }
 
 .connexion li {
-  background-color: #4A306D;
+  background-color: #6d4630;
   padding: 15px;
 }
 .connexion li a {
-  color: #d5b6df;
+  color: #dfcdb6;
 }
 .connexion li:hover {
-  background-color: #2e0f57;
-  color: #d5b6df;
+  background-color: #57260f;
+  color: #dfcdb6;
 }
 
 .home {
@@ -129,17 +131,20 @@ ul li a {
   max-height: 500px;
   padding: 10px;
   margin: 10px;
-  box-shadow: 0 5px 15px #4A306D;
+  box-shadow: 0 5px 15px #6d4630;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(255, 255, 255);
 }
-.post h2 {
-  font-size: 24px;
+.post h1 {
+  color: #57260f;
+  font-family: "Parisienne", cursive;
+  font-size: 30px;
   margin-bottom: 20px;
 }
-.post h2 p {
+.post h1 p {
   font-family: "Montserrat Alternates", sans-serif;
 }
 .post .text {
@@ -153,9 +158,10 @@ ul li a {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 .post .image-background {
-  background-color: #4A306D;
+  background-color: #6d4630;
   max-width: 350px;
   min-height: 200px;
   max-height: 200px;
@@ -175,12 +181,12 @@ ul li a {
   margin-right: 150px;
   margin-left: 150px;
   justify-content: space-between;
-  color: #2e0f57;
+  color: #57260f;
   cursor: pointer;
 }
 
 .link {
-  list-style-type: none;
+  color: #57260f;
   text-decoration: none;
 }
 
@@ -193,7 +199,7 @@ ul li a {
   align-items: center;
   padding: 10px;
   font-size: 4rem;
-  color: #35096e;
+  color: #57260f;
   font-family: "Parisienne", cursive;
 }
 
@@ -201,7 +207,7 @@ ul li a {
   width: 100%;
   height: 400px;
   margin-top: -50px;
-  background: #E8D7F1;
+  background: #f1e9d7;
   box-shadow: 2px 1px 15px 1px;
   display: flex;
   justify-content: space-around;
@@ -210,17 +216,17 @@ ul li a {
 .categories .biographie {
   width: 400px;
   height: 300px;
-  background-color: rgb(205, 143, 226);
+  background-color: rgb(214, 176, 126);
 }
 .categories .actualites {
   width: 400px;
   height: 300px;
-  background-color: rgb(205, 143, 226);
+  background-color: rgb(214, 176, 126);
 }
 .categories .implants {
   width: 400px;
   height: 300px;
-  background-color: rgb(205, 143, 226);
+  background-color: rgb(214, 176, 126);
 }
 
 .histoire {
@@ -231,11 +237,11 @@ ul li a {
 }
 .histoire h1 {
   font-family: "Josefin Sans", sans-serif;
-  color: #4A306D;
+  color: #6d4630;
   font-weight: 400;
 }
 .histoire p {
-  color: #7645AC;
+  color: #f5e0d1;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -253,14 +259,14 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: 100px;
-  background-color: #d5b6df;
+  background-color: rgb(214, 176, 126);
 }
 footer p {
   margin-right: auto;
   margin-left: auto;
   font-family: "Parisienne", cursive;
   font-size: 26px;
-  color: #2e0f57;
+  color: #57260f;
   font-weight: 600;
   text-align: center;
 }
@@ -276,14 +282,14 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: 100px;
-  background-color: #d5b6df;
+  background-color: rgb(214, 176, 126);
 }
 footer p {
   margin-right: auto;
   margin-left: auto;
   font-family: "Parisienne", cursive;
   font-size: 26px;
-  color: #2e0f57;
+  color: #57260f;
   font-weight: 600;
   text-align: center;
 }
@@ -296,6 +302,7 @@ footer p ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .actualites {
@@ -309,42 +316,63 @@ footer p ul {
   text-align: center;
   font-family: "Parisienne", cursive;
   font-size: 40px;
-  color: #4A306D;
+  color: #6d4630;
+}
+
+.container-posts {
+  display: flex;
+  flex-direction: column;
 }
 
 .write {
   padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .writeForm {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.writeForm .submit {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #f1e9d7;
+  color: #57260f;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  border: none;
+  border-radius: 10%;
 }
 
 .formGroup {
   margin-left: 150px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .formGroup .icon {
   margin: 10px;
   width: 25px;
   height: 25px;
-  border: 3px solid #2e0f57;
+  border: 3px solid #57260f;
   border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 25px;
-  color: #4A306D;
+  color: #6d4630;
 }
 .formGroup .writeTitle {
   font-family: "Poiret One", cursive;
-  color: #2e0f57;
+  color: #57260f;
   font-weight: bold;
   font-size: 24px;
   border: none;
   padding: 20px;
-  width: 90%;
+  width: 50%;
   height: 20px;
 }
 .formGroup .writeInput {
@@ -352,28 +380,16 @@ footer p ul {
   font-size: 24px;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  color: #4A306D;
-  border: 3px solid #2e0f57;
+  color: #6d4630;
+  border: 3px solid #57260f;
   padding: 10px;
-  width: 90%;
+  width: 900px;
+  min-width: 380px;
+  max-width: 900px;
   height: 200px;
 }
 .formGroup .writeInput :focus {
   outline: none;
-}
-
-.submit {
-  position: absolute;
-  top: 50%;
-  right: -50px;
-  padding: 10px;
-  font-size: 24px;
-  background-color: #E8D7F1;
-  color: #2e0f57;
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: none;
-  border-radius: 10%;
 }
 
 .settings {
@@ -382,7 +398,7 @@ footer p ul {
   justify-content: center;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  color: #2e0f57;
+  color: #57260f;
 }
 
 .position {
@@ -431,32 +447,32 @@ footer p ul {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
-  border: 2px solid #2e0f57;
-  background-color: #E8D7F1;
+  border: 2px solid #57260f;
+  background-color: #f1e9d7;
   text-align: start;
   font-size: 18px;
-  color: #2e0f57;
+  color: #57260f;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .settingsForm input:hover {
-  background-color: #4A306D;
-  color: #E8D7F1;
+  background-color: #6d4630;
+  color: #f1e9d7;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .settingsForm .settingsSubmit {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #E8D7F1;
-  color: #2e0f57;
+  background-color: #f1e9d7;
+  color: #57260f;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #2e0f57;
+  border: 2px solid #57260f;
   cursor: pointer;
 }
 .settingsForm .settingsSubmit:hover {
-  background-color: #4A306D;
-  color: #E8D7F1;
+  background-color: #6d4630;
+  color: #f1e9d7;
 }
 
 .loginForm {
@@ -469,16 +485,16 @@ footer p ul {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
-  border: 2px solid #2e0f57;
-  background-color: #E8D7F1;
+  border: 2px solid #57260f;
+  background-color: #f1e9d7;
   text-align: start;
   font-size: 18px;
-  color: #2e0f57;
+  color: #57260f;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .loginForm input:hover {
-  background-color: #4A306D;
-  color: #E8D7F1;
+  background-color: #6d4630;
+  color: #f1e9d7;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -493,46 +509,46 @@ footer p ul {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #E8D7F1;
-  color: #2e0f57;
+  background-color: #f1e9d7;
+  color: #57260f;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #2e0f57;
+  border: 2px solid #57260f;
   cursor: pointer;
 }
 .loginButton:hover {
-  background-color: #4A306D;
+  background-color: #6d4630;
 }
 .loginButton a {
   list-style-type: none;
   text-decoration: none;
-  color: #2e0f57;
+  color: #57260f;
 }
 .loginButton a:hover {
-  color: #d5b6df;
+  color: #dfcdb6;
 }
 
 .loginRegisterButton {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #E8D7F1;
-  color: #2e0f57;
+  background-color: #f1e9d7;
+  color: #57260f;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #2e0f57;
+  border: 2px solid #57260f;
   cursor: pointer;
 }
 .loginRegisterButton:hover {
-  background-color: #4A306D;
+  background-color: #6d4630;
 }
 .loginRegisterButton a {
   list-style-type: none;
   text-decoration: none;
-  color: #2e0f57;
+  color: #57260f;
 }
 .loginRegisterButton a:hover {
-  color: #d5b6df;
+  color: #dfcdb6;
 }
 
 .registerForm {
@@ -545,16 +561,16 @@ footer p ul {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
-  border: 2px solid #2e0f57;
-  background-color: #E8D7F1;
+  border: 2px solid #57260f;
+  background-color: #f1e9d7;
   text-align: start;
   font-size: 18px;
-  color: #2e0f57;
+  color: #57260f;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .registerForm input:hover {
-  background-color: #4A306D;
-  color: #E8D7F1;
+  background-color: #6d4630;
+  color: #f1e9d7;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -569,38 +585,38 @@ footer p ul {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #E8D7F1;
-  color: #2e0f57;
+  background-color: #f1e9d7;
+  color: #57260f;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #2e0f57;
+  border: 2px solid #57260f;
   cursor: pointer;
 }
 .registerButton:hover {
-  background-color: #4A306D;
-  color: #E8D7F1;
+  background-color: #6d4630;
+  color: #f1e9d7;
 }
 
 .registerRegisterButton {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #E8D7F1;
-  color: #2e0f57;
+  background-color: #f1e9d7;
+  color: #57260f;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #2e0f57;
+  border: 2px solid #57260f;
   cursor: pointer;
 }
 .registerRegisterButton:hover {
-  background-color: #4A306D;
-  color: #E8D7F1;
+  background-color: #6d4630;
+  color: #f1e9d7;
 }
 
 .singlePost {
   display: flex;
 }
-.singlePost .background {
+.singlePost .image-background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -608,6 +624,8 @@ footer p ul {
   height: 500px;
   object-fit: cover;
   margin-top: 150px;
+  margin-left: 30px;
+  background-color: #57260f;
 }
 .singlePost .text {
   display: flex;
@@ -618,7 +636,7 @@ footer p ul {
 }
 .singlePost .text .singlePostTitre {
   margin-top: 50px;
-  color: #2e0f57;
+  color: #57260f;
   font-family: "Parisienne", cursive;
 }
 .singlePost .text p {
@@ -628,7 +646,7 @@ footer p ul {
   display: flex;
   margin: 0;
   font-size: 28px;
-  color: #2e0f57;
+  color: #57260f;
   cursor: pointer;
 }
 .singlePost .commandes-icons .icon {
@@ -639,6 +657,11 @@ footer p ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.chat {
+  width: 100%;
+  height: 500px;
 }
 
 .single {

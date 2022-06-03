@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   
 
     h1 {
         margin-top: 50px;
@@ -13,4 +14,8 @@
      
     }
     
+}
+.container-posts {
+    display: flex;
+    flex-direction: column;
 }

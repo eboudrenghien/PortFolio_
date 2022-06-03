@@ -1,16 +1,32 @@
 .write {
     padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 // .writeForm {
 
 // }
 .writeForm {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .submit {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 24px;
+        background-color: $color7;
+        color: $color2;
+        font-family: $police2;
+        font-weight: bold;
+        border: none;
+        border-radius: 10%;
+   }
 }
 .formGroup {
  margin-left: 150px;
  display: flex;
+ justify-content: center;
  align-items: center;
     .icon {
         margin: 10px;
@@ -31,7 +47,7 @@
      font-size: 24px;
      border: none;
      padding: 20px;
-     width: 90%;
+     width: 50%;
      height: 20px;
  }
  .writeInput {
@@ -42,25 +58,13 @@
      color: $color1;
      border: 3px solid $color2;
      padding: 10px;
-     width: 90%;
+     width: 900px;
+     min-width:380px;
+     max-width: 900px;
      height: 200px;
 
      :focus {
          outline: none;
      }
  }
-}
-
-.submit {
-    position: absolute;
-    top: 50%;
-    right: -50px;
-    padding: 10px;
-    font-size: 24px;
-    background-color: $color7;
-    color: $color2;
-    font-family: $police2;
-    font-weight: bold;
-    border: none;
-    border-radius: 10%;
 }

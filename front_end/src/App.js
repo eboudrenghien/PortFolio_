@@ -13,7 +13,6 @@ import Footer from './components/footer/Footer';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Register from './pages/Register.jsx';
-import Post from './components/post/Post.jsx'
 import Single from './pages/Single';
 
 class App extends Component {
