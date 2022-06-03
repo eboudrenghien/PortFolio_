@@ -4,7 +4,7 @@ const Post = require("../models/Post")
 
 
 // Créer un post
-router.post("/", async (req, res) => {
+router.post("/actualites", async (req, res) => {
     const newPost = new Post(req.body)
     try {
         const savedPost = await newPost.save()
@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
 })
 //maj
 
-router.put("/:id", async (req, res) => {
+router.put("/actualites/:id", async (req, res) => {
     try {
         const post = await Post.findById(req.params.id)
         if(post.pseudo === req.body.pseudo) {
@@ -38,7 +38,7 @@ router.put("/:id", async (req, res) => {
 })
 
 // // suppression
-router.delete("/:id", async (req, res) => {
+router.delete("/actualites/:id", async (req, res) => {
     try {
         const post = await Post.findById(req.params.id)
         if(post.pseudo === req.body.pseudo) {
@@ -58,7 +58,7 @@ router.delete("/:id", async (req, res) => {
 })
 
 
-router.get("/:id", async (req, res) => {
+router.get("/actualites/:id", async (req, res) => {
     try {
         const post = await Post.findById(req.params.id)
         res.status(200).json(post)
@@ -68,7 +68,7 @@ router.get("/:id", async (req, res) => {
 })
 
 // voir toutes les publications
-router.get("/", async (req, res) => {
+router.get("/actualites", async (req, res) => {
     const pseudo = req.query.User
     try {
         let posts

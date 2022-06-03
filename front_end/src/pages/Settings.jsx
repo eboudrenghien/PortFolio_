@@ -14,7 +14,7 @@ function Settings() {
                         <img src={PhotoDeProfil} alt="chat" style={{ width: "200px", borderRadius: "10px" }} />
                        
                             <label htmlFor="fileInput">
-                                <i class="iconPP fa-solid fa-image-portrait" title='choisir une image' ></i>
+                                <i classname="iconPP fa-solid fa-image-portrait" title='choisir une image' ></i>
                             </label>
                             <input type="file" id="fileInput" style={{ display: "none" }} />
                         

@@ -14,6 +14,7 @@ import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Register from './pages/Register.jsx';
 import Post from './components/post/Post.jsx'
+import Single from './pages/Single';
 
 class App extends Component {
   render() {
@@ -28,7 +29,8 @@ class App extends Component {
           <Route path="/reglages" element={<Settings />} />
           <Route path="/biographie" element={<Biographie />} />
           <Route path="/actualites" element={<Actualites />} />
-          <Route path="/actualites/:postId" element={<Post/>} />
+          <Route path="/actualites/:id" element={<Single/>} />
+         
           <Route path="/implants" element={<Implants />} />
           <Route path="/contact" element={<Contact />} />
 

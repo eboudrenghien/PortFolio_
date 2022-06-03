@@ -1,19 +1,23 @@
 import React from 'react'
-
-function Post () {
+import {Link} from "react-router-dom"
+function Post ({post}) {
  
+  const options = {weekday: "long", year:"numeric", month:"long", day: "numeric"}
   return (
     <div className='post'>
-      <div className="image-background"></div>
-      <h1>La surdité</h1>
+      {post.photo && (
+        <img className="image-background" src={post.photo} alt="" />
+      )}
+      <Link to={`/actualites/${post._id}`} className="link">
+      <h1 className='titre'> {post.titre}</h1>
+      </Link>
       <p className='text'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis molestiae provident sed voluptates incidunt odit sequi quaerat quasi omnis eveniet ad qui praesentium saepe beatae assumenda, quod vel perferendis?
-        Delectus earum obcaecati sint facere adipisci. Velit praesentium quidem perspiciatis facilis quisquam rerum aliquid vitae atque maxime quia placeat accusamus doloremque commodi, minima consequatur et nostrum, quae aspernatur unde harum.
-        Nostrum quia quod accusantium est consequuntur officia, voluptatum aut veritatis ipsum, ut ad! Sed consequatur consectetur numquam distinctio accusamus pariatur rerum commodi, possimus iste perspiciatis recusandae eveniet eos magnam neque.
+        {post.contenu}
       </p>
+      <span className='date'>{new Date(post.createdAt).toLocaleDateString("fr-FR", options)}</span>
      <div className="commandes">
-     <i class="fa-solid fa-pen-to-square edit"></i>
-     <i class="fa-solid fa-trash delete"></i>
+     <i className="fa-solid fa-pen-to-square edit"></i>
+     <i className="fa-solid fa-trash delete"></i>
 
      </div>
     </div>

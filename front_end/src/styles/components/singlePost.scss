@@ -1,0 +1,50 @@
+.singlePost {
+    display: flex;
+
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin-top: 150px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin: 150px;
+        text-align: justify;
+        font-size: 18px;
+        .singlePostTitre {
+            margin-top: 50px;
+            color: $color2;
+            font-family: $police3;
+
+        } p {
+            font-family: $police4;
+            
+        }
+    }
+
+    .commandes-icons {
+        display: flex;
+        margin: 0;
+        font-size: 28px;
+        color: $color2;
+        cursor: pointer;
+
+        .icon {
+            margin-left: 20px;
+        }
+    }
+
+    .singlePostInfo {
+        margin: 50px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+}

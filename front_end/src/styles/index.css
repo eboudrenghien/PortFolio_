@@ -139,11 +139,15 @@ ul li a {
   font-size: 24px;
   margin-bottom: 20px;
 }
+.post h2 p {
+  font-family: "Montserrat Alternates", sans-serif;
+}
 .post .text {
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
-  line-height: 24px;
+  margin-top: 10px;
+  font-size: 20px;
   overflow: scroll;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -162,7 +166,8 @@ ul li a {
 .post .date {
   display: flex;
   justify-content: center;
-  font-size: 12px;
+  font-size: 13px;
+  margin-top: 15px;
 }
 .post .commandes {
   display: flex;
@@ -172,6 +177,11 @@ ul li a {
   justify-content: space-between;
   color: #2e0f57;
   cursor: pointer;
+}
+
+.link {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .title {
@@ -585,6 +595,54 @@ footer p ul {
 .registerRegisterButton:hover {
   background-color: #4A306D;
   color: #E8D7F1;
+}
+
+.singlePost {
+  display: flex;
+}
+.singlePost .background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 150px;
+}
+.singlePost .text {
+  display: flex;
+  flex-direction: column;
+  margin: 150px;
+  text-align: justify;
+  font-size: 18px;
+}
+.singlePost .text .singlePostTitre {
+  margin-top: 50px;
+  color: #2e0f57;
+  font-family: "Parisienne", cursive;
+}
+.singlePost .text p {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.singlePost .commandes-icons {
+  display: flex;
+  margin: 0;
+  font-size: 28px;
+  color: #2e0f57;
+  cursor: pointer;
+}
+.singlePost .commandes-icons .icon {
+  margin-left: 20px;
+}
+.singlePost .singlePostInfo {
+  margin: 50px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.single {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */
