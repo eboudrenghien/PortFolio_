@@ -135,11 +135,13 @@ ul li a {
   flex-direction: column;
   justify-content: center;
 }
-.post h2 {
-  font-size: 24px;
+.post h1 {
+  color: #2e0f57;
+  font-family: "Parisienne", cursive;
+  font-size: 30px;
   margin-bottom: 20px;
 }
-.post h2 p {
+.post h1 p {
   font-family: "Montserrat Alternates", sans-serif;
 }
 .post .text {
@@ -153,6 +155,7 @@ ul li a {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 .post .image-background {
   background-color: #4A306D;
@@ -180,7 +183,7 @@ ul li a {
 }
 
 .link {
-  list-style-type: none;
+  color: #2e0f57;
   text-decoration: none;
 }
 

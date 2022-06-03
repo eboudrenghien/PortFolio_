@@ -13,14 +13,18 @@
     justify-content: center;
 
 
-    h2 {
-    font-size: 24px;
+
+    h1 {
+        color: $color2;
+        font-family: $police3;
+        font-size: 30px;
     margin-bottom: 20px;
     p {
         font-family: $police4;
     }
 
 }
+
     .text {
         text-align: justify;
         margin-left: auto;
@@ -32,6 +36,7 @@
        display: -webkit-box;
        -webkit-line-clamp: 3;
        -webkit-box-orient: vertical;
+       font-family: $police4;
     }
     .image-background {
         background-color: $color1;
@@ -59,11 +64,15 @@
         color: $color2;
         cursor: pointer;
     }
+    
 }
 
 
 
  .link {
-     list-style-type: none;
+     color: $color2;
+
      text-decoration: none;
+     
+
  }
