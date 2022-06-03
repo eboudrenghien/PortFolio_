@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   height: 1000px;
-  background-color: #b6865a;
 }
 
 .footer {
@@ -23,7 +22,7 @@ body {
   align-items: center;
   padding: 10px;
   font-size: 4rem;
-  color: #57260f;
+  color: #2e0f57;
   font-family: "Parisienne", cursive;
 }
 
@@ -31,7 +30,7 @@ body {
   width: 100%;
   height: 400px;
   margin-top: -50px;
-  background: #f1e9d7;
+  background: #E8D7F1;
   box-shadow: 2px 1px 15px 1px;
   display: flex;
   justify-content: space-around;
@@ -40,17 +39,17 @@ body {
 .categories .biographie {
   width: 400px;
   height: 300px;
-  background-color: rgb(214, 176, 126);
+  background-color: rgb(205, 143, 226);
 }
 .categories .actualites {
   width: 400px;
   height: 300px;
-  background-color: rgb(214, 176, 126);
+  background-color: rgb(205, 143, 226);
 }
 .categories .implants {
   width: 400px;
   height: 300px;
-  background-color: rgb(214, 176, 126);
+  background-color: rgb(205, 143, 226);
 }
 
 .histoire {
@@ -61,11 +60,11 @@ body {
 }
 .histoire h1 {
   font-family: "Josefin Sans", sans-serif;
-  color: #6d4630;
+  color: #4A306D;
   font-weight: 400;
 }
 .histoire p {
-  color: #f5e0d1;
+  color: #7645AC;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -78,7 +77,7 @@ body {
 .navbar {
   width: 100%;
   height: 100px;
-  background-color: rgb(214, 176, 126);
+  background-color: #d5b6df;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -95,7 +94,7 @@ ul {
 ul li {
   margin-right: 50px;
   text-decoration: none;
-  color: #6d4630;
+  color: #4A306D;
   font-size: 24px;
   font-weight: bold;
   font-family: "Poiret One", cursive;
@@ -104,19 +103,19 @@ ul li {
 ul li a {
   list-style-type: none;
   text-decoration: none;
-  color: #6d4630;
+  color: #4A306D;
 }
 
 .connexion li {
-  background-color: #6d4630;
+  background-color: #4A306D;
   padding: 15px;
 }
 .connexion li a {
-  color: #dfcdb6;
+  color: #d5b6df;
 }
 .connexion li:hover {
-  background-color: #57260f;
-  color: #dfcdb6;
+  background-color: #2e0f57;
+  color: #d5b6df;
 }
 
 .home {
@@ -131,15 +130,14 @@ ul li a {
   max-height: 500px;
   padding: 10px;
   margin: 10px;
-  box-shadow: 0 5px 15px #6d4630;
+  box-shadow: 0 5px 15px #4A306D;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
 }
 .post h1 {
-  color: #57260f;
+  color: #2e0f57;
   font-family: "Parisienne", cursive;
   font-size: 30px;
   margin-bottom: 20px;
@@ -161,7 +159,7 @@ ul li a {
   font-family: "Montserrat Alternates", sans-serif;
 }
 .post .image-background {
-  background-color: #6d4630;
+  background-color: #4A306D;
   max-width: 350px;
   min-height: 200px;
   max-height: 200px;
@@ -181,12 +179,12 @@ ul li a {
   margin-right: 150px;
   margin-left: 150px;
   justify-content: space-between;
-  color: #57260f;
+  color: #2e0f57;
   cursor: pointer;
 }
 
 .link {
-  color: #57260f;
+  color: #2e0f57;
   text-decoration: none;
 }
 
@@ -199,7 +197,7 @@ ul li a {
   align-items: center;
   padding: 10px;
   font-size: 4rem;
-  color: #57260f;
+  color: #2e0f57;
   font-family: "Parisienne", cursive;
 }
 
@@ -207,7 +205,7 @@ ul li a {
   width: 100%;
   height: 400px;
   margin-top: -50px;
-  background: #f1e9d7;
+  background: #E8D7F1;
   box-shadow: 2px 1px 15px 1px;
   display: flex;
   justify-content: space-around;
@@ -216,17 +214,17 @@ ul li a {
 .categories .biographie {
   width: 400px;
   height: 300px;
-  background-color: rgb(214, 176, 126);
+  background-color: rgb(205, 143, 226);
 }
 .categories .actualites {
   width: 400px;
   height: 300px;
-  background-color: rgb(214, 176, 126);
+  background-color: rgb(205, 143, 226);
 }
 .categories .implants {
   width: 400px;
   height: 300px;
-  background-color: rgb(214, 176, 126);
+  background-color: rgb(205, 143, 226);
 }
 
 .histoire {
@@ -237,11 +235,11 @@ ul li a {
 }
 .histoire h1 {
   font-family: "Josefin Sans", sans-serif;
-  color: #6d4630;
+  color: #4A306D;
   font-weight: 400;
 }
 .histoire p {
-  color: #f5e0d1;
+  color: #7645AC;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -259,14 +257,14 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: 100px;
-  background-color: rgb(214, 176, 126);
+  background-color: #d5b6df;
 }
 footer p {
   margin-right: auto;
   margin-left: auto;
   font-family: "Parisienne", cursive;
   font-size: 26px;
-  color: #57260f;
+  color: #2e0f57;
   font-weight: 600;
   text-align: center;
 }
@@ -282,14 +280,14 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: 100px;
-  background-color: rgb(214, 176, 126);
+  background-color: #d5b6df;
 }
 footer p {
   margin-right: auto;
   margin-left: auto;
   font-family: "Parisienne", cursive;
   font-size: 26px;
-  color: #57260f;
+  color: #2e0f57;
   font-weight: 600;
   text-align: center;
 }
@@ -316,7 +314,7 @@ footer p ul {
   text-align: center;
   font-family: "Parisienne", cursive;
   font-size: 40px;
-  color: #6d4630;
+  color: #4A306D;
 }
 
 .container-posts {
@@ -339,8 +337,8 @@ footer p ul {
   margin-top: 20px;
   padding: 10px;
   font-size: 24px;
-  background-color: #f1e9d7;
-  color: #57260f;
+  background-color: #E8D7F1;
+  color: #2e0f57;
   font-family: "Poiret One", cursive;
   font-weight: bold;
   border: none;
@@ -357,17 +355,17 @@ footer p ul {
   margin: 10px;
   width: 25px;
   height: 25px;
-  border: 3px solid #57260f;
+  border: 3px solid #2e0f57;
   border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 25px;
-  color: #6d4630;
+  color: #4A306D;
 }
 .formGroup .writeTitle {
   font-family: "Poiret One", cursive;
-  color: #57260f;
+  color: #2e0f57;
   font-weight: bold;
   font-size: 24px;
   border: none;
@@ -380,8 +378,8 @@ footer p ul {
   font-size: 24px;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  color: #6d4630;
-  border: 3px solid #57260f;
+  color: #4A306D;
+  border: 3px solid #2e0f57;
   padding: 10px;
   width: 900px;
   min-width: 380px;
@@ -398,7 +396,7 @@ footer p ul {
   justify-content: center;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  color: #57260f;
+  color: #2e0f57;
 }
 
 .position {
@@ -447,32 +445,32 @@ footer p ul {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
-  border: 2px solid #57260f;
-  background-color: #f1e9d7;
+  border: 2px solid #2e0f57;
+  background-color: #E8D7F1;
   text-align: start;
   font-size: 18px;
-  color: #57260f;
+  color: #2e0f57;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .settingsForm input:hover {
-  background-color: #6d4630;
-  color: #f1e9d7;
+  background-color: #4A306D;
+  color: #E8D7F1;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .settingsForm .settingsSubmit {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #f1e9d7;
-  color: #57260f;
+  background-color: #E8D7F1;
+  color: #2e0f57;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #57260f;
+  border: 2px solid #2e0f57;
   cursor: pointer;
 }
 .settingsForm .settingsSubmit:hover {
-  background-color: #6d4630;
-  color: #f1e9d7;
+  background-color: #4A306D;
+  color: #E8D7F1;
 }
 
 .loginForm {
@@ -485,16 +483,16 @@ footer p ul {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
-  border: 2px solid #57260f;
-  background-color: #f1e9d7;
+  border: 2px solid #2e0f57;
+  background-color: #E8D7F1;
   text-align: start;
   font-size: 18px;
-  color: #57260f;
+  color: #2e0f57;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .loginForm input:hover {
-  background-color: #6d4630;
-  color: #f1e9d7;
+  background-color: #4A306D;
+  color: #E8D7F1;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -509,46 +507,46 @@ footer p ul {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #f1e9d7;
-  color: #57260f;
+  background-color: #E8D7F1;
+  color: #2e0f57;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #57260f;
+  border: 2px solid #2e0f57;
   cursor: pointer;
 }
 .loginButton:hover {
-  background-color: #6d4630;
+  background-color: #4A306D;
 }
 .loginButton a {
   list-style-type: none;
   text-decoration: none;
-  color: #57260f;
+  color: #2e0f57;
 }
 .loginButton a:hover {
-  color: #dfcdb6;
+  color: #d5b6df;
 }
 
 .loginRegisterButton {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #f1e9d7;
-  color: #57260f;
+  background-color: #E8D7F1;
+  color: #2e0f57;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #57260f;
+  border: 2px solid #2e0f57;
   cursor: pointer;
 }
 .loginRegisterButton:hover {
-  background-color: #6d4630;
+  background-color: #4A306D;
 }
 .loginRegisterButton a {
   list-style-type: none;
   text-decoration: none;
-  color: #57260f;
+  color: #2e0f57;
 }
 .loginRegisterButton a:hover {
-  color: #dfcdb6;
+  color: #d5b6df;
 }
 
 .registerForm {
@@ -561,16 +559,16 @@ footer p ul {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
-  border: 2px solid #57260f;
-  background-color: #f1e9d7;
+  border: 2px solid #2e0f57;
+  background-color: #E8D7F1;
   text-align: start;
   font-size: 18px;
-  color: #57260f;
+  color: #2e0f57;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .registerForm input:hover {
-  background-color: #6d4630;
-  color: #f1e9d7;
+  background-color: #4A306D;
+  color: #E8D7F1;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -585,32 +583,32 @@ footer p ul {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #f1e9d7;
-  color: #57260f;
+  background-color: #E8D7F1;
+  color: #2e0f57;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #57260f;
+  border: 2px solid #2e0f57;
   cursor: pointer;
 }
 .registerButton:hover {
-  background-color: #6d4630;
-  color: #f1e9d7;
+  background-color: #4A306D;
+  color: #E8D7F1;
 }
 
 .registerRegisterButton {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  background-color: #f1e9d7;
-  color: #57260f;
+  background-color: #E8D7F1;
+  color: #2e0f57;
   font-family: "Poiret One", cursive;
   font-weight: bold;
-  border: 2px solid #57260f;
+  border: 2px solid #2e0f57;
   cursor: pointer;
 }
 .registerRegisterButton:hover {
-  background-color: #6d4630;
-  color: #f1e9d7;
+  background-color: #4A306D;
+  color: #E8D7F1;
 }
 
 .singlePost {
@@ -625,7 +623,7 @@ footer p ul {
   object-fit: cover;
   margin-top: 150px;
   margin-left: 30px;
-  background-color: #57260f;
+  background-color: #2e0f57;
 }
 .singlePost .text {
   display: flex;
@@ -636,7 +634,7 @@ footer p ul {
 }
 .singlePost .text .singlePostTitre {
   margin-top: 50px;
-  color: #57260f;
+  color: #2e0f57;
   font-family: "Parisienne", cursive;
 }
 .singlePost .text p {
@@ -646,7 +644,7 @@ footer p ul {
   display: flex;
   margin: 0;
   font-size: 28px;
-  color: #57260f;
+  color: #2e0f57;
   cursor: pointer;
 }
 .singlePost .commandes-icons .icon {
