@@ -2,8 +2,7 @@
 
     max-width: 350px;
     min-width: 350px;
-    min-height: 300px;
-    max-height: 500px;
+    min-height: auto;
     padding: 10px;
     margin: 10px;
     box-shadow: 0 5px 15px $color1;
@@ -39,12 +38,10 @@
        -webkit-box-orient: vertical;
        font-family: $police4;
     }
-    .image-background {
+    .postImg {
         background-color: $color1;
+        width: 500px;
         max-width: 350px;
-        min-height: 200px;
-        max-height: 200px;
-
         display: flex;
         justify-content: center;
         align-items: center;

@@ -26,8 +26,13 @@
 .formGroup {
  margin-left: 150px;
  display: flex;
+ flex-direction: column;
  justify-content: center;
  align-items: center;
+ .writeImg{
+    display: flex;
+    width: 600px;
+}
     .icon {
         margin: 10px;
         width: 25px;
@@ -68,3 +73,4 @@
      }
  }
 }
+

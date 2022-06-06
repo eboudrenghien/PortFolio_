@@ -9,11 +9,13 @@ const userRoute = require ("./routes/users")
 const postRoute = require ("./routes/posts")
 const multer = require ("multer")
 const app = express();
+const path = require ("path")
 
 app.use(express.json())
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public")); 
+app.use("/images", express.static(path.join(__dirname, "/images")))
 
 mongoose
     .connect(process.env.URL_API, { useNewUrlParser: true, useUnifiedTopology:true })
@@ -25,12 +27,12 @@ const storage = multer.diskStorage({
     destination:(req, file, cb) => {
         cb(null, "images")
     }, filename:(req, file, cb) => {
-        cb(null, req.body.nom)
+        cb(null, req.body.name)
     }
 })
 
 const upload = multer ({storage: storage})
-app.post("/back_end/upload", upload.single("file", (req, res) => {
+app.post("/back_end/actualites/upload", upload.single("file", (req, res) => {
     res.status(200).json("L'image a bien été téléchargé")
 }))
 

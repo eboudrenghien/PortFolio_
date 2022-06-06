@@ -1,15 +1,17 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { Chat } from '../../styles/assets/krafou2.jpg'
 function Post({ post }) {
 
   const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" }
+
+  const PF = "http://localhost:5500/images/"
   return (
     <div className='post'>
       <div className="image-background">
-        {post.photo && (
-          <img src={Chat} alt="chat" />
-        )}</div>
+        {post.photo && <img className="postImg"
+          src={PF + post.photo} alt="" />
+        }
+      </div>
       <Link to={`/actualites/${post._id}`} className="link">
         <h1 className='titre'> {post.titre}</h1>
       </Link>

@@ -4,8 +4,8 @@ function Login() {
   return (
     <div className='login'>
         <form action="" className="loginForm">
-        <input type="text" placeholder='Pseudo' />
-        <input type="password" placeholder='Mot de passe' />
+        <input type="text" placeholder='Pseudo' autoFocus={true} autoComplete="off"  />
+        <input type="password" placeholder='Mot de passe' autoFocus={true} autoComplete="off"  />
         </form>
     <div className="button">
         <button className="loginButton"><Link to="/reglages">CONNEXION</Link></button>

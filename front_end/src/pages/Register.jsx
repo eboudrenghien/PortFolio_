@@ -26,11 +26,11 @@ function Register() {
   return (
     <div className='register'>
         <form action="" className="registerForm" onSubmit={handleSubmit}>
-        <input type="text" placeholder='Pseudo' name="pseudo" 
+        <input type="text" placeholder='Pseudo' name="pseudo" autoFocus={true} autoComplete="off" 
         onChange={e => setPseudo(e.target.value)}/>
-        <input type="text" placeholder='Adresse mail' name='email' 
+        <input type="text" placeholder='Adresse mail' name='email' autoFocus={true} autoComplete="off" 
         onChange={e => setEmail(e.target.value)}/>
-        <input type="password" placeholder='Mot de passe' name='mdp' 
+        <input type="password" placeholder='Mot de passe' name='mdp' autoFocus={true} autoComplete="off" 
         onChange={e => setMdp(e.target.value)}/>
         <div className="button">
         <button className="registerButton" type='submit'>S'ENREGISTRER</button>

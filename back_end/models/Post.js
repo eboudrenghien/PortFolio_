@@ -13,10 +13,10 @@ const PostSchema = new mongoose.Schema({
         type: String,
         required: false
     },
-    pseudo: {
-        type: String,
-        required: true,
-    },
+    // pseudo: {
+    //     type: String,
+    //     required: true,
+    // },
 },
     { timestamps: true } // date de maj
 

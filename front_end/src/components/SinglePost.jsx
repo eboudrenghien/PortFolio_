@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import Chat from '../styles/assets/krafou2.jpg'
 import axios from 'axios'
 import { useLocation } from 'react-router-dom'
 
 function SinglePost() {
+
     const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" }
     const location = useLocation()
     const path = location.pathname.split("/")[2];
+    const PF = "http://localhost:5500/images/"
 
     const [post, setPost] = useState({})
 
@@ -19,12 +20,17 @@ function SinglePost() {
         getPost()
     }, [path])
 
+    const handleDelete = async () => {
+        try {
+          await axios.delete(`/actualites/${post._id}`)
+          window.location.replace("/");
+        } catch (err) {}
+      };
     return (
         <div className='singlePost'>
-           /
             <div className="image-background">
                 {post.photo && (
-                    <img src={Chat} alt="chat" />
+                    <img src={PF + post.photo} alt="" className="singleImg"/>
                 )}
             </div>
             <div className="text">
@@ -38,8 +44,8 @@ function SinglePost() {
                     <span className="singlePostPseudo">Pseudo: <b>{post.pseudo}</b></span>
                     <span className="singlePostDate">{new Date(post.createdAt).toLocaleDateString("fr-FR", options)}</span>
                 </div><div className="commandes-icons">
-                    <i className="fa-solid fa-pen-to-square edit icon"></i>
-                    <i className="fa-solid fa-trash delete icon"></i>
+                    <i className="fa-solid fa-pen-to-square edit icon"  ></i>
+                    <i className="fa-solid fa-trash delete icon" onClick={handleDelete}></i>
                 </div></div>
 
 
