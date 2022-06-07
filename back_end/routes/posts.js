@@ -16,9 +16,9 @@ router.post("/actualites", async (req, res) => {
 //maj
 
 router.put("/actualites/:id", async (req, res) => {
-    // try {
-    //     const post = await Post.findById(req.params.id)
-    //     if(post.pseudo === req.body.pseudo) {
+    try {
+        const post = await Post.findById(req.params.id)
+        if(post.pseudo === req.body.pseudo) {
 
             try {
                 const updatedPost = await Post.findByIdAndUpdate(req.params.id, {
@@ -29,19 +29,19 @@ router.put("/actualites/:id", async (req, res) => {
             } catch (err) {
                 res.status(500).json(err)
             }
-    //     } else {
-    //         res.status(401).json("Vous ne pouvez pas mettre à jour cette publication ! ")
-    //     }
-    // } catch (err) {
-    //     res.status(500).json(err)
-    // }
+        } else {
+            res.status(401).json("Vous ne pouvez pas mettre à jour cette publication ! ")
+        }
+    } catch (err) {
+        res.status(500).json(err)
+    }
 })
 
 // // suppression
 router.delete("/actualites/:id", async (req, res) => {
-    // try {
-    //     const post = await Post.findById(req.params.id)
-    //     if(post.pseudo === req.body.pseudo) {
+    try {
+        const post = await Post.findById(req.params.id)
+        if(post.pseudo === req.body.pseudo) {
 
             try {
                await post.delete()
@@ -49,12 +49,12 @@ router.delete("/actualites/:id", async (req, res) => {
             } catch (err) {
                 res.status(500).json(err)
             }
-    //     } else {
-    //         res.status(401).json("Vous ne pouvez pas supprimer cette publication ! ")
-    //     }
-    // } catch (err) {
-    //     res.status(500).json(err)
-    // }
+        } else {
+            res.status(401).json("Vous ne pouvez pas supprimer cette publication ! ")
+        }
+    } catch (err) {
+        res.status(500).json(err)
+    }
 })
 
 

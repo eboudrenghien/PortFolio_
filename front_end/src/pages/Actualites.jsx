@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Posts from '../components/Posts'
-import Write from '../components/Write'
 import axios from "axios"
 
 function Actualites() {
@@ -19,7 +18,6 @@ function Actualites() {
     
     <div className="container-posts" >
       <h1>Toutes les actualités</h1>
-     <Write/>
       <Posts posts={posts}/>
           
     </div>

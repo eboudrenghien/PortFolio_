@@ -1,6 +1,7 @@
 import React from 'react'
 import PhotoDeProfil from '../styles/assets/krafou2.jpg'
 function Settings() {
+  
     return (
         <div className='settings'>
             <div className='position'>

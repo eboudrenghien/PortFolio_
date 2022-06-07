@@ -40,6 +40,6 @@ app.post("/back_end/actualites/upload", upload.single("file", (req, res) => {
     app.use("/back_end/users", userRoute)
     app.use("/back_end/posts", postRoute)
 
-    app.listen("5500", function () {
-        console.log("Le serveur est connecté sur le port 5500 => http://localhost:5500");
+    app.listen("5000", function () {
+        console.log("Le serveur est connecté sur le port 5000 => http://localhost:5000");
     });

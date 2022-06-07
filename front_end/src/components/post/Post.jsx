@@ -4,7 +4,7 @@ function Post({ post }) {
 
   const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" }
 
-  const PF = "http://localhost:5500/images/"
+  const PF = "http://localhost:5000/images/"
   return (
     <div className='post'>
       <div className="image-background">

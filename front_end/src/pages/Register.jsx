@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 import React, { useState } from 'react'
 
 function Register() {
@@ -36,6 +37,9 @@ function Register() {
         <button className="registerButton" type='submit'>S'ENREGISTRER</button>
         </div>
         </form>
+        <div className="button">
+        <button className="RegisterLoginButton"><Link to="/connexion">CONNEXION</Link></button>
+      </div>
        {error && <span style={{color:"red", display:"flex", justifyContent:"center", marginTop:"20px", fontSize:"14px", fontWeight:"600"}}>Une erreur a été détectée.</span>}
     
     </div>

@@ -49,18 +49,20 @@
 
         &:hover {
             background-color: $color1;
-        
+        color: $color5;
         }
         a {
             list-style-type: none;
             text-decoration: none;
             color: $color2;
-            &:hover {
-                color: $color5;
-            }
+          
         }
+        
     }
-
+.loginButton:disabled {
+            cursor: not-allowed;
+            background-color: $color4;
+        }
 .loginRegisterButton{
     margin-top: 10px;
     padding: 10px;
