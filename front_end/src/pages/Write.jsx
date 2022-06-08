@@ -2,18 +2,21 @@
 /* eslint-disable */
 import React, { useContext, useState } from 'react';
 import axios from "axios"
+import { Context } from '../context/Context';
 
 function Write() {
     const [titre, setTitre] = useState("")
     const [contenu, setContenu] = useState("")
     const [file, setFile] = useState(null)
-    // const { user } = useContext(Context)
+    const { user } = useContext(Context)
+
     const handleSubmit = async (e) => {
         e.preventDefault()
         const newPost = {
             titre,
             contenu,
-            // pseudo: user.pseudo
+            pseudo: user.pseudo,
+
         }
         if (file) {
             const data = new FormData()
@@ -24,14 +27,14 @@ function Write() {
             try {
                 await axios.post("/actualites/upload", data)
             } catch (err) {
-                
+
             }
         }
         try {
             const res = await axios.post("/posts/actualites/", newPost)
             window.location.replace("/actualites/" + res.data._id)
-        } catch (err) { 
-            console.log(err,"fail");
+        } catch (err) {
+            console.log(err, "fail");
         }
     }
     return (

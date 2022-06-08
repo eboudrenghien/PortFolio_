@@ -120,7 +120,7 @@ ul li a {
 
 .navBarImg {
   border-radius: 50%;
-  width: 100px;
+  width: 120px;
   height: auto;
   max-height: 120px;
   cursor: pointer;
@@ -634,8 +634,13 @@ footer p ul {
 
 .singlePost {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-.singlePost .image-background {
+.singlePost .singleImg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -644,16 +649,16 @@ footer p ul {
   object-fit: cover;
   margin-top: 150px;
   margin-left: 30px;
-  background-color: #2e0f57;
+  background-color: #E8D7F1;
 }
 .singlePost .text {
   display: flex;
-  flex-direction: column;
-  margin: 150px;
+  margin: 0;
   text-align: justify;
   font-size: 18px;
 }
 .singlePost .text .singlePostTitre {
+  display: flex;
   margin-top: 50px;
   color: #2e0f57;
   font-family: "Parisienne", cursive;
@@ -675,6 +680,10 @@ footer p ul {
   margin: 50px 5px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.singlePost .paragraphe {
+  display: flex;
   justify-content: center;
 }
 

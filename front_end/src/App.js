@@ -8,7 +8,7 @@ import Actualites from './pages/Actualites';
 import Implants from './pages/Implants'
 import Contact from './pages/Contact'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Navbar from './components/Menu/Navbar';
+import Navbar from './components/Navbar';
 import Footer from './components/footer/Footer';
 import Settings from './pages/Settings';
 import Login from './pages/Login';

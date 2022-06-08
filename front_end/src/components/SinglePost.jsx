@@ -11,6 +11,9 @@ function SinglePost() {
     const PF = "http://localhost:5000/images/"
 
     const [post, setPost] = useState({})
+    const [titre, setTitre] = useState("")
+    const [contenu, setContenu] = useState("")
+    const [updateMode, setUpdateMode] = useState(false)
 
 
     useEffect(() => {
@@ -21,34 +24,45 @@ function SinglePost() {
         getPost()
     }, [path])
 
+    const handleDelete = async () => {
+        try {
+            await axios.delete("/posts/actualites/" + path)
+            window.location.replace("/")
+        } catch (err) {
 
+        }
+    }
     return (
         <div className='singlePost'>
-            <div className="image-background">
-                {post.photo && (
-                    <img src={PF + post.photo} alt="" className="singleImg" />
+            {post.photo && (
+                <img src={PF + post.photo} alt="" className="singleImg" />
+            )}
+            {updateMode ?
+                <input type="text" value={post.titre} /> : (
+                    <div className="text">
+                        <h1 className="singlePostTitre">
+                            {post.titre}
+
+                        </h1>
+                    </div>
                 )}
-            </div>
-            <div className="text">
-                <h1 className="singlePostTitre">
-                    {post.titre}
-                </h1>
+
+            <div className="singlePostInfo">
                 <div className="paragraphe">
                     <p> {post.contenu}</p>
                 </div>
-                <div className="singlePostInfo">
-                    <span className="singlePostPseudo">Pseudo:
-                        <Link to={`/?user=${post.pseudo}`} className="link">
-                            <b>{post.pseudo}</b>
-                        </Link>
-                    </span>
-                    <span className="singlePostDate">{new Date(post.createdAt).toLocaleDateString("fr-FR", options)}</span>
-                </div><div className="commandes-icons">
-                    <i className="fa-solid fa-pen-to-square edit icon"  ></i>
-                    <i className="fa-solid fa-trash delete icon" ></i>
-                </div></div>
+                <span className="singlePostPseudo">Pseudo:
+                    <Link to={`/?user=${post.pseudo}`} className="link">
+                        <b>{post.pseudo}</b>
+                    </Link>
+                </span>
+                <span className="singlePostDate">{new Date(post.createdAt).toLocaleDateString("fr-FR", options)}</span>
+            </div>
 
-
+            <div className="commandes-icons">
+                <i className="fa-solid fa-pen-to-square edit icon" onClick={() => setUpdateMode(true)} ></i>
+                <i className="fa-solid fa-trash delete icon" onClick={handleDelete} ></i>
+            </div>
         </div>
     )
 }

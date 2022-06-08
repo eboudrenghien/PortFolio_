@@ -1,7 +1,7 @@
 /* eslint-disable */
 // eslint-disable-next-line 
 import React, { useEffect, useState }from 'react'
-import Header from '../components/header/Header';
+import Header from '../components/Header';
 import Posts from '../components/Posts';
 import axios from "axios"
 import { useLocation } from 'react-router-dom';
