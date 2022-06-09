@@ -13,7 +13,8 @@ router.put("/:id", async (req, res) => {
         }
 
         try {
-            const updatedUser = await User.findByIdAndUpdate(req.params.id, {
+            const updatedUser = await User.findByIdAndUpdate
+            (req.params.id, {
                 $set: req.body,
             },
                 { new: true })
@@ -22,7 +23,7 @@ router.put("/:id", async (req, res) => {
             res.status(500).json(err)
         }
     } else {
-        res.status(401).json("Vous ne pouvez pas mettre à jour votre compte.")
+        res.status(401).json("Vous ne pouvez pas mettre à jour ce compte.")
     }
 })
 
@@ -44,7 +45,7 @@ router.delete("/:id", async (req, res) => {
             res.status(404).json("L'utilisateur n'a pas été trouvé")
         }
     } else {
-        res.status(401).json("Vous ne pouvez pas supprimer votre compte.")
+        res.status(401).json("Vous ne pouvez pas supprimer ce compte.")
     }
 })
 

@@ -666,15 +666,26 @@ footer p ul {
 .singlePost .text p {
   font-family: "Montserrat Alternates", sans-serif;
 }
+.singlePost .singlePostTitreInput {
+  margin-top: 50px;
+  padding: 15px;
+  color: #2e0f57;
+  font-family: "Parisienne", cursive;
+  font-size: 28px;
+  border: none;
+  border-bottom: 2px solid #7645AC;
+}
+.singlePost .singlePostTitreInput :focus {
+  outline: none;
+}
 .singlePost .commandes-icons {
   display: flex;
-  margin: 0;
   font-size: 28px;
   color: #2e0f57;
   cursor: pointer;
 }
 .singlePost .commandes-icons .icon {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .singlePost .singlePostInfo {
   margin: 50px 5px;
@@ -686,10 +697,40 @@ footer p ul {
   display: flex;
   justify-content: center;
 }
+.singlePost .paragrapheText {
+  width: 500px;
+  height: 150px;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  border: none;
+  border-top: 2px solid #7645AC;
+  border-right: 2px solid #7645AC;
+}
+.singlePost .paragrapheText :focus {
+  outline: none;
+}
 
 .link {
   color: inherit;
   text-decoration: none;
+}
+
+.singlePostButton {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d5b6df;
+  font-size: 24px;
+  background-color: #E8D7F1;
+  color: #2e0f57;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  border: 2px solid #2e0f57;
+  cursor: pointer;
+}
+.singlePostButton:hover {
+  background-color: #4A306D;
+  color: #E8D7F1;
 }
 
 .single {

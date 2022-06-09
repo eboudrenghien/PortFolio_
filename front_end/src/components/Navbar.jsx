@@ -20,10 +20,11 @@ function Navbar() {
         <li><Link className='navbarItem' to="/implants">IMPLANTS</Link></li>
         <li><Link className='navbarItem' to="/contact">CONTACT</Link></li>
       </ul>
-    
       {
         user ? (
+          <Link to="/reglages">
           <img className="navBarImg" src={user.profilPP} alt="" />
+          </Link>
         ) : (
           <ul className='connexion'>
             
