@@ -6,14 +6,14 @@ function Header() {
     
     <div className='header'>
       <div className='title'>
-        <h1>La surdité selon Esther</h1>
+        <h1>Le blog d'Esther et son chat</h1>
       </div>
-      <div className="bordure-title"></div>
+      <div className="bordure">
       <div className='categories'>
         <div className="biographie"> Photo biographie</div>
         <div className="actualites">Photos des actualités</div>
         <div className="implants">Photo implant</div>
-      </div>
+      </div></div>
       <div className="histoire">
         <h1>HISTOIRE</h1>
         <p>La surdité selon Esther, pourquoi ce titre ? Au départ, je ne pensais pas créer un site sur la surdité. 

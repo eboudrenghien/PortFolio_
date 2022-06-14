@@ -19,6 +19,11 @@ function Home() {
   }, [search])
   return (
     <div className='home'>
+      <section>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
+      </section>
       <Header/>
       <Posts posts={posts}/>
     </div>

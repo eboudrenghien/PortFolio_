@@ -1,3 +1,4 @@
+
 .title {
     margin-top: 15px;
     h1 {
@@ -5,17 +6,38 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        font-family: $police3;
         font-size: 4rem;
-        color: $color2;
-        font-family: 'Parisienne', cursive;
+        color: #F89B29;
+        text-transform: uppercase;
+        text-align: center;
+        animation: animate 5s linear infinite;
+       
+        
+    }
+}
+@keyframes animate {
+    0% {
+        color:#F89B29;
+        text-shadow: none;
+    }
+   100% {
+        color:#fdefde;
+        text-shadow: 0 0 10px rgb(255, 187, 0),
+        0 0 20px rgb(255, 187, 0),
+        0 0 40px rgb(255, 187, 0),
+        0 0 80px rgb(255, 187, 0),
+        0 0 160px rgb(255, 187, 0),
+        0 0 400px rgb(255, 187, 0), ;
     }
 }
 
 .categories {
+    position: relative;
     width: 100%;
-    height: 400px;
-    margin-top: -50px;
-    background: #E8D7F1;
+    min-height: 400px;
+    margin-top: 0;
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 2px 1px 15px 1px;
     display: flex;
     justify-content: space-around;

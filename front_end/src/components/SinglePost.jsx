@@ -1,8 +1,9 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useLocation } from 'react-router-dom'
+import { Context } from '../context/Context'
 
 function SinglePost() {
 
@@ -10,6 +11,7 @@ function SinglePost() {
     const location = useLocation()
     const path = location.pathname.split("/")[2];
     const PF = "http://localhost:5000/images/"
+    const { user } = useContext(Context)
 
     const [post, setPost] = useState({})
     const [titre, setTitre] = useState("")
@@ -19,7 +21,7 @@ function SinglePost() {
 
     useEffect(() => {
         const getPost = async () => {
-            const res = await axios.get("/posts/actualites/" + path)
+            const res = await axios.get("/posts/actualites/" + path,)
             setPost(res.data)
             setTitre(res.data.titre)
             setContenu(res.data.contenu)
@@ -29,19 +31,23 @@ function SinglePost() {
 
     const handleDelete = async () => {
         try {
-            await axios.delete("/posts/actualites/" + path)
+            await axios.delete("/posts/actualites/" + path, {
+                data: { pseudo: user.pseudo },
+            })
             window.location.replace("/")
         } catch (err) {
-
+            console.log(err);
         }
     }
     const handleUpdate = async () => {
         try {
             await axios.put("/posts/actualites/" + path, {
-               titre,
-               contenu
+                pseudo: user.pseudo,
+                titre,
+                contenu
             })
-           window.location.reload()
+            // window.location.reload()
+            setUpdateMode(false)
         } catch (err) {
             console.log(err);
         }
@@ -51,16 +57,18 @@ function SinglePost() {
             {post.photo && (
                 <img src={PF + post.photo} alt="" className="singleImg" />
             )}
-            <div className="commandes-icons">
-                <i className="fa-solid fa-pen-to-square edit icon" onClick={() => setUpdateMode(true)} ></i>
-                <i className="fa-solid fa-trash delete icon" onClick={handleDelete} ></i>
-            </div>
             {updateMode ? (
                 <input type="text" value={titre} className="singlePostTitreInput" autoComplete='off' autoFocus onChange={(e) => setTitre(e.target.value)} />) : (
                 <div className="text">
                     <h1 className="singlePostTitre">
-                        {post.titre}
+                        {titre}
+                        {post.pseudo === user.pseudo &&
+                            <div className="commandes-icons">
+                                <i className="fa-solid fa-pen-to-square edit icon" onClick={() => setUpdateMode(true)} ></i>
+                                <i className="fa-solid fa-trash delete icon" onClick={handleDelete} ></i>
+                            </div>
 
+                        }
                     </h1>
                 </div>
             )}
@@ -68,12 +76,15 @@ function SinglePost() {
             <div className="singlePostInfo">
                 {updateMode ? (
                     <textarea className="paragrapheText" value={contenu} autoComplete='off' rows={"5"} cols={"33"} onChange={(e) => setContenu(e.target.value)} />
-                    ) : (
-                        <div className="paragraphe">
-                            <p> {post.contenu}</p>
-                        </div>
-                    )}
-                <button className='singlePostButton' onClick={handleUpdate}>SAUVEGARDER</button>
+                ) : (
+                    <div className="paragraphe">
+                        <p> {contenu}</p>
+                    </div>
+                )}
+                {updateMode && (
+
+                    <button className='singlePostButton' onClick={handleUpdate}>SAUVEGARDER</button>
+                )}
                 <span className="singlePostPseudo">Pseudo:
                     <Link to={`/?user=${post.pseudo}`} className="link">
                         <b>{post.pseudo}</b>

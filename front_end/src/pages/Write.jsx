@@ -8,15 +8,14 @@ function Write() {
     const [titre, setTitre] = useState("")
     const [contenu, setContenu] = useState("")
     const [file, setFile] = useState(null)
-    const { user } = useContext(Context)
+    const {user} = useContext(Context)
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         const newPost = {
+            pseudo: user.pseudo,
             titre,
             contenu,
-            pseudo: user.pseudo,
-
         }
         if (file) {
             const data = new FormData()
@@ -25,7 +24,7 @@ function Write() {
             data.append("file", file)
             newPost.photo = filename
             try {
-                await axios.post("/actualites/upload", data)
+                await axios.post("/upload", data)
             } catch (err) {
 
             }
@@ -48,7 +47,7 @@ function Write() {
                         />)}
                     <label htmlFor="photo"><i className="icon fa-solid fa-plus" style={{ width: "25px" }}></i></label>
                     <input type="file" name="ajouter une photo" id="photo" style={{ display: "none" }} onChange={(e) => setFile(e.target.files[0])} />
-                    <input className='writeTitle' name="articleTitre" type="text" placeholder='Saisir un titre' autoFocus={true} autoComplete="off" onChange={e => setTitre(e.target.value)} />
+                    <input className='writeTitre' name="articleTitre" type="text" placeholder='Saisir un titre' autoFocus={true} autoComplete="off" onChange={e => setTitre(e.target.value)} />
                 </div>
                 <div className="formGroup">
                     <textarea placeholder='Saisir un texte' name="" className="writeInput" autoComplete='off' onChange={e => setContenu(e.target.value)} ></textarea>

@@ -16,3 +16,7 @@ Base du site terminée.
 
 
 à modifier : css image pour les articles + ajout des utilisateurs
+
+--
+connexion utilisateur + maj utilisateur
+mettre une image par défaut à chaque utilisateur

@@ -32,7 +32,7 @@ const storage = multer.diskStorage({
 })
 
 const upload = multer ({storage: storage})
-app.post("/back_end/actualites/upload", upload.single("file", (req, res) => {
+app.post("/back_end/upload", upload.single("file", (req, res) => {
     res.status(200).json("L'image a bien été téléchargé")
 }))
 
@@ -40,6 +40,6 @@ app.post("/back_end/actualites/upload", upload.single("file", (req, res) => {
     app.use("/back_end/users", userRoute)
     app.use("/back_end/posts", postRoute)
 
-    app.listen("5000", function () {
+    app.listen(process.env.PORT, function () {
         console.log("Le serveur est connecté sur le port 5000 => http://localhost:5000");
     });

@@ -19,11 +19,6 @@ function Post({ post }) {
         {post.contenu}
       </p>
       <span className='date'>{new Date(post.createdAt).toLocaleDateString("fr-FR", options)}</span>
-      <div className="commandes">
-        <i className="fa-solid fa-pen-to-square edit"></i>
-        <i className="fa-solid fa-trash delete"></i>
-
-      </div>
     </div>
   )
 }

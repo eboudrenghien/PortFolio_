@@ -1,53 +1,77 @@
-.navbar {
-
-  width: 100%;
-  height: 100px;
-  background-color: #d5b6df;
+.navbarUl {
+  background-color: #ffffff;
   position: relative;
+  min-height: 10vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 ul {
+  position: relative;
   display: flex;
-  
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
 
   li {
-      margin-right: 50px;
-      text-decoration: none;
-      color: $color1;
-      font-size: 24px;
-      font-weight: bold;
-      font-family: $police2;
-      cursor: pointer;
-      a {
-        list-style-type: none;
-        text-decoration: none;
-        color: $color1;
-      }
-  }
-}
-.connexion {
-  li {
-    background-color: $color1;
-    padding: 15px;
+    cursor: pointer;
+    list-style: none;
+
     a {
-      color: $color5;
-    }&:hover {
-    background-color: $color2;
-    color: $color5;
+      position: relative;
+      display: inline-block;
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+      padding: 20px 30px;
+      z-index: 1000;
+    }
+
+    ion-icon {
+      font-size: 4.5em;
+      pointer-events: none;
+      opacity: 0.4;
+      transition: 0.25s;
+    }
   }
-  }
-  
 }
-.navBarImg{
-  border-radius: 50%;
-  width: 120px;
+
+ul li:hover a ion-icon {
+  opacity: 1;
+}
+ion-icon {
+  border-radius: 10px;
+  background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+
+} 
+
+
+.connexion {
+  border-radius: 10px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  li {
+    padding:15px 10px;
+    a {
+      color:hsla(333, 100%, 53%, 1);
+      &:hover {
+        color: white;
+      }
+    }
+    &:hover {
+      border-radius: 10px;
+      background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    }
+  }
+
+}
+
+.navBarImg {
+  
+  border-radius: 10px;
+  width: 100px;
   height: auto;
   max-height: 120px;
   cursor: pointer;
