@@ -17,7 +17,7 @@ function Actualites() {
     <div className='actualites'>
     
     <div className="container-posts" >
-      <h1>Toutes les actualités</h1>
+      <h1>ACTUALITÉS</h1>
       <Posts posts={posts}/>
           
     </div>

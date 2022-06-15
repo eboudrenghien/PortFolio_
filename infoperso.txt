@@ -12,11 +12,15 @@ Logo à créer : idée => oreille avec des fleurs, ou des animaux. + implants
 -----------------------------------
 Mercredi 18 Mai 2022
 Base du site terminée. 
-À modifier : Footer, quand je clique sur les réseaux sociax faire en sorte que ça ouvre sur un nouvel onglet.
 
 
-à modifier : css image pour les articles + ajout des utilisateurs
+
+
 
 --
-connexion utilisateur + maj utilisateur
+
 mettre une image par défaut à chaque utilisateur
+mettre à jour l'article affichage
+mettre à jour écriture
+créer son CV
+mettre en place le FAQ

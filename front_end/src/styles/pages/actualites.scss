@@ -1,6 +1,5 @@
 .actualites {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
    
@@ -10,12 +9,33 @@
         text-align: center;
         font-family: $police3;
         font-size: 40px;
-        color: $color1;
+        color: $color6;
+        text-shadow: 0 0 10px rgb(226, 156, 5);
+        animation: animate 5s linear infinite;
      
     }
     
 }
+@keyframes animate {
+    0% {
+        color: white;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fdefde;
+        text-shadow: 0 0 10px #95ECB0 ,
+            0 0 20px #F3F98A,
+            0 0 40px rgb(255, 187, 0),
+            0 0 80px #F3F98A,
+            0 0 160px rgb(255, 187, 0),
+            0 0 400px #95ECB0;
+    }
+}
+
 .container-posts {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }

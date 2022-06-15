@@ -3,7 +3,7 @@
 
 import React, {useContext } from 'react';
 import Home from './pages/Home';
-import Biographie from './pages/Biographie'
+import Cv from './pages/Cv'
 import Actualites from './pages/Actualites';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from './components/Navbar';
@@ -19,7 +19,7 @@ import Faq from './pages/Faq';
 function App() {
     const {user} = useContext(Context)
     return (
-      
+
         <BrowserRouter>
         <Navbar />
         <Routes>
@@ -28,7 +28,7 @@ function App() {
           <Route path="/senregistrer" element={user ? <Home/> : <Register />} />
           <Route path="/connexion" element={user ? <Home/> : <Login />} />
           <Route path="/reglages" element={user ? <Settings /> : <Register />} />
-          <Route path="/biographie" element={<Biographie />} />
+          <Route path="/cv" element={<Cv />} />
           <Route path="/actualites" element={<Actualites />} />
           <Route path="/actualites/:id" element={<Single/>} />
           <Route path='/ecrire' element={user ? <Write/> : <Register/>} />
@@ -37,7 +37,7 @@ function App() {
         </Routes>
         <Footer />
         </BrowserRouter>
-    
+   
   
   )
 }

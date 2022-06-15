@@ -1,9 +1,15 @@
+
 .navbarUl {
-  background-color: #ffffff;
+  background: white;
   position: relative;
   min-height: 10vh;
   display: flex;
   justify-content: space-evenly;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+
+
+
 }
 
 ul {
@@ -11,8 +17,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  flex-wrap: wrap;
 
   li {
     cursor: pointer;
@@ -31,20 +36,22 @@ ul {
     ion-icon {
       font-size: 4.5em;
       pointer-events: none;
-      opacity: 0.4;
+      opacity: 0.6;
       transition: 0.25s;
     }
   }
 }
 
-ul li:hover a ion-icon {
+ul li:hover ion-icon {
   opacity: 1;
 }
+
 ion-icon {
   border-radius: 10px;
-  background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+  background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+}
 
-} 
+
 
 
 .connexion {
@@ -52,14 +59,18 @@ ion-icon {
   font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
   font-weight: 600;
+
   li {
-    padding:15px 10px;
+    padding: 15px 10px;
+
     a {
-      color:hsla(333, 100%, 53%, 1);
+      color: hsla(333, 100%, 53%, 1);
+
       &:hover {
         color: white;
       }
     }
+
     &:hover {
       border-radius: 10px;
       background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
@@ -69,7 +80,7 @@ ion-icon {
 }
 
 .navBarImg {
-  
+
   border-radius: 10px;
   width: 100px;
   height: auto;

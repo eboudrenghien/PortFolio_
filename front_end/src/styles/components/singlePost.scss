@@ -1,6 +1,6 @@
 .singlePost {
     display: flex;
-    flex-direction: column;
+  
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -96,13 +96,7 @@
     }
 }
 
-.link {
-    color: inherit;
 
-    text-decoration: none;
-
-
-}
 
 .singlePostButton {
     margin-top: 20px;

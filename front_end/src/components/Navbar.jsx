@@ -13,15 +13,15 @@ function Navbar() {
   return (
     <div className="navbar">
       <ul className='navbarUl'> 
-        <li className='navbarItem' onClick={handleLogout}>{user && <ion-icon name="power-outline"></ion-icon>}</li>
-        <li><Link className='navbarItem' to="/"><ion-icon name="home-outline"></ion-icon></Link></li>
-        <li><Link className='navbarItem' to="/biographie"><ion-icon name="book-outline"></ion-icon></Link></li>
-        <li><Link className='navbarItem' to="/actualites"><ion-icon name="newspaper-outline"></ion-icon></Link></li>
-        <li><Link className='navbarItem' to="/ecrire"><ion-icon name="pencil-outline"></ion-icon></Link></li>
-        <li><Link className='navbarItem' to="/faq"><ion-icon name="help-outline"></ion-icon></Link></li>
+        <li className='logout' onClick={handleLogout} title='Déconnexion'>{user && <ion-icon name="power-outline" style={{color:"white"}} ></ion-icon>}</li>
+        <li><Link className='navbarItem' to="/" title='Home'><ion-icon name="home-outline"></ion-icon></Link></li>
+        <li><Link className='navbarItem' to="/cv" title='CV'><ion-icon name="book-outline"></ion-icon></Link></li>
+        <li><Link className='navbarItem' to="/actualites" title='Actualités'><ion-icon name="newspaper-outline"></ion-icon></Link></li>
+        <li><Link className='navbarItem' to="/ecrire" title='Écrire'><ion-icon name="pencil-outline"></ion-icon></Link></li>
+        <li><Link className='navbarItem' to="/faq" title='FAQ'><ion-icon name="help-outline"></ion-icon></Link></li>
          { 
         user ? (
-         <Link to="/reglages">
+         <Link to="/reglages" title='Profil'>
             
           <img className="navBarImg" src={PF + user.profilPP} alt="profilPP" />
           </Link>

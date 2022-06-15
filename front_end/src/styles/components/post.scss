@@ -1,76 +1,122 @@
 .post {
-
-    max-width: 350px;
-    min-width: 350px;
-    min-height: auto;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 5px 15px $color1;
-    text-align: center;
+position: relative;
+   
+    max-width: 1200px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    
+    z-index: 1;
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    position: relative;
+    min-width: 280px;
+    min-height: 500px;
+    max-width: 280px;
+    max-height: 500px;
+    margin: 30px;
 
-
-
-    h1 {
-        color: $color2;
-        font-family: $police3;
-        font-size: 30px;
-    margin-bottom: 20px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1) ;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+    h2{
+       color: white;
+       font-family: $police3;
+       text-shadow: 0 0 10px $color3;
+       text-align: center;
+        
+    }
     p {
-        font-family: $police4;
-    }
-
-}
-
-    .text {
-        text-align: justify;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        font-size: 20px;
-       overflow: scroll; 
-       text-overflow: ellipsis;
-       display: -webkit-box;
-       -webkit-line-clamp: 3;
-       -webkit-box-orient: vertical;
-       font-family: $police4;
-    }
-    .postImg {
-        background-color: $color1;
-        width: 500px;
-        max-width: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        font-size: 13px;
+        font-family: $police3;
+        font-weight: 400;
         margin-top: 15px;
-    
     }
-    .commandes {
-        display: flex;
-        margin-top: 20px;
-        margin-right: 150px;
-        margin-left: 150px;
-        justify-content: space-between;
-        color: $color2;
-        cursor: pointer;
+    .link {
+        
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 10px;
     }
-    
+    .read {
+        color: white;
+        font-family: $police4;
+        font-size: 26px;
+        font-weight: 800;
+        text-shadow: 0 0 10px $color3;
+    }
+   .date {
+    font-family: $police3;
+    font-weight: 300;
+    font-size: 12px;
+   }
+}
+.postImg {
+width: 190px;
+max-height: 300px;
 }
 
+   
+
+}
+//  h1 {
+//         color: $color2;
+//         font-family: $police4;
+//         font-size: 30px;
+//         font-weight: 600;
+//     margin-bottom: 20px;
+//     p {
+//         font-family: $police4;
+//     }
+    // .text {
+    //     text-align: justify;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     margin-top: 10px;
+    //     font-size: 20px;
+    //    overflow: scroll; 
+    //    text-overflow: ellipsis;
+    //    display: -webkit-box;
+    //    -webkit-line-clamp: 3;
+    //    -webkit-box-orient: vertical;
+    //    font-family: $police4;
+    // }
+    // .postImg {
+    //     background-color: $color1;
+    //     width: 500px;
+    //     max-width: 350px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+    // .date {
+    //     display: flex;
+    //     justify-content: center;
+    //     font-size: 13px;
+    //     margin-top: 15px;
+    
+    // }
+    // .commandes {
+    //     display: flex;
+    //     margin-top: 20px;
+    //     margin-right: 150px;
+    //     margin-left: 150px;
+    //     justify-content: space-between;
+    //     color: $color2;
+    //     cursor: pointer;
+    // }
+    
+// }
 
 
- .link {
-     color: inherit;
 
-     text-decoration: none;
-     
-
- }
