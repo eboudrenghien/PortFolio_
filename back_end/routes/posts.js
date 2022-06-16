@@ -69,7 +69,7 @@ router.get("/actualites/:id", async (req, res) => {
 
 // voir toutes les publications
 router.get("/actualites", async (req, res) => {
-    const pseudo = req.query.User
+    const pseudo = req.query.user
     try {
         let posts
        if (pseudo) {

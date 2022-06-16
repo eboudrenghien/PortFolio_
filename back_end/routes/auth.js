@@ -12,7 +12,7 @@ router.post("/senregistrer", async (req, res) => {
             pseudo: req.body.pseudo,
             email: req.body.email,
             mdp: hash
-            // mettre hashedPass
+            
         })
 
         const user = await newUser.save(); //sauvegarde les données d'utilisateur

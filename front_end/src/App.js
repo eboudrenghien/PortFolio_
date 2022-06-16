@@ -1,45 +1,45 @@
 /* eslint-disable */
 // eslint-disable-next-line 
 
-import React, { Component } from 'react';
+import React, {useContext } from 'react';
 import Home from './pages/Home';
-import Biographie from './pages/Biographie'
+import Cv from './pages/Cv'
 import Actualites from './pages/Actualites';
-import Implants from './pages/Implants'
-import Contact from './pages/Contact'
-import { Routes, Route } from "react-router-dom";
-import Navbar from './components/Menu/Navbar';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Navbar from './components/Navbar';
 import Footer from './components/footer/Footer';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Register from './pages/Register.jsx';
-import Post from './components/post/Post.jsx'
 import Single from './pages/Single';
+import Write from './pages/Write';
+import { Context } from './context/Context';
+import Faq from './pages/Faq';
 
-class App extends Component {
-  render() {
+function App() {
+    const {user} = useContext(Context)
     return (
-      <div className="App">
+
+        <BrowserRouter>
         <Navbar />
         <Routes>
 
           <Route exact path="/" element={<Home />} />
-          <Route path="/senregistrer" element={<Register />} />
-          <Route path="/connexion" element={<Login />} />
-          <Route path="/reglages" element={<Settings />} />
-          <Route path="/biographie" element={<Biographie />} />
+          <Route path="/senregistrer" element={user ? <Home/> : <Register />} />
+          <Route path="/connexion" element={user ? <Home/> : <Login />} />
+          <Route path="/reglages" element={user ? <Settings /> : <Register />} />
+          <Route path="/cv" element={<Cv />} />
           <Route path="/actualites" element={<Actualites />} />
           <Route path="/actualites/:id" element={<Single/>} />
-         
-          <Route path="/implants" element={<Implants />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path='/ecrire' element={user ? <Write/> : <Register/>} />
+          <Route path="/faq" element={<Faq />} />
 
         </Routes>
-
         <Footer />
-      </div>
-    );
-  }
+        </BrowserRouter>
+   
+  
+  )
 }
 
 export default App;

@@ -1,0 +1,151 @@
+.settings {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    font-family: $police2;
+    font-weight: bold;
+    color: $color2;
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.settingsPP {
+    display: flex;
+    margin-top: 10px;
+   
+   
+
+}
+
+ion-icon {
+    color: $color6;
+    font-size: 4.5em;
+    margin-left: 30px;
+    opacity: 0.5;
+    transition: 0.25s;
+    border-radius: 10px;
+    background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+    cursor: pointer;
+}
+
+ion-icon:hover {
+    opacity: 1;
+}
+
+.settingsUpdateTitre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+
+    font-size: 18px;
+
+    margin-top: 50px;
+    text-align: center;
+    font-family: $police3;
+    font-size: 40px;
+    color: $color6;
+    text-shadow: 0 0 10px rgb(226, 156, 5);
+    animation: animate 5s linear infinite;
+
+    @keyframes animate {
+        0% {
+            color: white;
+            text-shadow: none;
+        }
+
+        100% {
+            color: #fdefde;
+            text-shadow: 0 0 10px #95ECB0,
+                0 0 20px #F3F98A,
+                0 0 40px rgb(255, 187, 0),
+                0 0 80px #F3F98A,
+                0 0 160px rgb(255, 187, 0),
+                0 0 400px #95ECB0;
+        }
+    }
+
+}
+
+.settingsInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.settingsForm {
+
+    input {
+        margin-top: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-family: $police3;
+        font-size: 20px;
+        color: $color2;
+        
+
+        &:focus {
+            border: 2px solid #95ECB0;
+            outline: none;
+        }
+    }
+
+    .settingsSubmit {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 24px;
+        background: $color4;
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 5px 20px;
+        font-family: $police3;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color2;
+        cursor: pointer;
+
+        text-align: center;
+
+        text-shadow: 0 0 10px rgb(226, 156, 5);
+        animation: animate 5s linear infinite;
+
+        &:hover {
+            background: $color5;
+        }
+
+        @keyframes animate {
+            0% {
+                color: white;
+                text-shadow: none;
+            }
+
+            100% {
+                color: #fdefde;
+                text-shadow: 0 0 10px #95ECB0,
+                    0 0 20px #F3F98A,
+                    0 0 40px rgb(255, 187, 0),
+                    0 0 80px #F3F98A,
+                    0 0 160px rgb(255, 187, 0),
+                    0 0 400px #95ECB0;
+            }
+        }
+        
+    }
+}
+label {
+    font-family: $police3;
+    margin-top: 30px;
+}

@@ -1,50 +1,213 @@
 .singlePost {
+    position: relative;
     display: flex;
 
-    .background {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.cardSinglePost {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 30px;
+}
+
+.text {
+    margin-bottom: auto;
+    position: relative;
+    display: flex;
+
+}
+
+.contentSinglePost {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    h1 {
+        margin-top: 0px;
+        margin-left: 20px;
+        color: white;
+        font-family: $police3;
+        text-shadow: 0 0 10px $color3;
+        text-align: center;
+        text-transform: uppercase;
+
     }
-    .text {
-        display: flex;
-        flex-direction: column;
-        margin: 150px;
-        text-align: justify;
-        font-size: 18px;
-        .singlePostTitre {
-            margin-top: 50px;
-            color: $color2;
-            font-family: $police3;
 
-        } p {
-            font-family: $police4;
-            
-        }
-    }
 
-    .commandes-icons {
-        display: flex;
-        margin: 0;
-        font-size: 28px;
-        color: $color2;
-        cursor: pointer;
+}
 
-        .icon {
-            margin-left: 20px;
-        }
-    }
+.commandes-icons {
 
-    .singlePostInfo {
-        margin: 50px 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
+    padding: 10px 10px;
+    font-size: 20px;
+    color: $color2;
+    cursor: pointer;
 
+
+    .icon {
+
+        margin-left: 10px;
     }
 }
+
+.singlePostInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto;
+
+    min-width: 600px;
+    max-width: 600px;
+    height: auto;
+
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+
+
+
+    p {
+        display: flex;
+        font-family: $police3;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+}
+
+.date {
+    font-family: $police3;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+
+.singleImg {
+    margin-top: 60px;
+    width: 500px;
+    max-height: 800px;
+    border-radius: 10px;
+}
+
+// EDITION
+.singlePostButton {
+
+    margin-top: 20px;
+    padding: 10px;
+
+    font-size: 24px;
+
+    background: $color4;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 20px;
+    font-family: $police3;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color2;
+    cursor: pointer;
+
+    text-align: center;
+
+    text-shadow: 0 0 10px rgb(226, 156, 5);
+    animation: animate 5s linear infinite;
+
+    &:hover {
+        background: $color5;
+    }
+
+    @keyframes animate {
+        0% {
+            color: white;
+            text-shadow: none;
+        }
+
+        100% {
+            color: #fdefde;
+            text-shadow: 0 0 10px #95ECB0,
+                0 0 20px #F3F98A,
+                0 0 40px rgb(255, 187, 0),
+                0 0 80px #F3F98A,
+                0 0 160px rgb(255, 187, 0),
+                0 0 400px #95ECB0;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+.singlePostTitreInput {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 20px;
+    font-family: $police3;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color2;
+
+    &:focus {
+        border: 2px solid #95ECB0;
+        outline: none;
+    }
+}
+
+.paragrapheText {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: $police3;
+    font-size: 20px;
+    color: $color2;
+    &:focus {
+        border: 2px solid #95ECB0;
+        outline: none;
+    }
+}         
+.btn-grad {
+   background-image: linear-gradient(to right, #DAE2F8 0%, #D6A4A4  51%, #DAE2F8  100%);
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

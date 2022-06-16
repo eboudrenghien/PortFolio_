@@ -9,11 +9,13 @@ const userRoute = require ("./routes/users")
 const postRoute = require ("./routes/posts")
 const multer = require ("multer")
 const app = express();
+const path = require ("path")
 
 app.use(express.json())
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public")); 
+app.use("/images", express.static(path.join(__dirname, "/images")))
 
 mongoose
     .connect(process.env.URL_API, { useNewUrlParser: true, useUnifiedTopology:true })
@@ -25,7 +27,7 @@ const storage = multer.diskStorage({
     destination:(req, file, cb) => {
         cb(null, "images")
     }, filename:(req, file, cb) => {
-        cb(null, req.body.nom)
+        cb(null, req.body.name)
     }
 })
 
@@ -38,6 +40,6 @@ app.post("/back_end/upload", upload.single("file", (req, res) => {
     app.use("/back_end/users", userRoute)
     app.use("/back_end/posts", postRoute)
 
-    app.listen("5000", function () {
+    app.listen(process.env.PORT, function () {
         console.log("Le serveur est connecté sur le port 5000 => http://localhost:5000");
     });

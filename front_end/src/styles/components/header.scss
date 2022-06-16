@@ -1,63 +1,68 @@
 .title {
     margin-top: 15px;
+
     h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        font-family: $police3;
         font-size: 4rem;
-        color: #35096e;
-        font-family: 'Parisienne', cursive;
+        text-transform: uppercase;
+        text-align: center;
+        animation: animate 5s linear infinite;
+
+
     }
 }
 
-.categories {
-    width: 100%;
-    height: 400px;
-    margin-top: -50px;
-    background: #E8D7F1;
-    box-shadow: 2px 1px 15px 1px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    .biographie {
-        width: 400px;
-        height: 300px;
-        background-color: $color6;
-    }
-    .actualites {
-        width: 400px;
-        height: 300px;
-        background-color: $color6;
-    }
-    .implants {
-        width: 400px;
-        height: 300px;
-        background-color: $color6;
+@keyframes animate {
+    0% {
+        color: white;
+        text-shadow: none;
     }
 
+    100% {
+        color: #fdefde;
+        text-shadow: 0 0 10px #95ECB0 ,
+            0 0 20px #F3F98A,
+            0 0 40px rgb(255, 187, 0),
+            0 0 80px #F3F98A,
+            0 0 160px rgb(255, 187, 0),
+            0 0 400px #95ECB0;
+    }
 }
-.histoire {
-    margin-top: 30px;
+
+
+
+.box {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    max-width: 700px;
+    min-height: 200px;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
-    h1 {
-        font-family : $police1;
-        color: $color1;
-        font-weight: 400;
-    }
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
 
-    p {
-        color: $color3;
-        font-family: $police1;
-        text-align: center;
-        font-weight: 300;
-        font-size: 26px;
-        margin-right: 100px;
-        margin-left: 100px;
-        padding: 30px;
-    }
+
+    text-align: center;
+    color: rgb(255, 136, 0);
+    font-family: $police3;
+    font-weight: 500;
+
 }
