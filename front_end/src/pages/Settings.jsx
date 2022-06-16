@@ -58,10 +58,10 @@ function Settings() {
                     </div>
                     {/* <label>Photo de profil</label> */}
                     <div className="settingsPP">
-                        <img src={file ? URL.createObjectURL(file) : PF + user.profilPP} alt="" style={{ width: "200px", borderRadius: "10px" }} />
+                        <img className='imgPP' src={file ? URL.createObjectURL(file) : PF + user.profilPP} alt="" style={{ width: "200px", borderRadius: "10px" }} />
 
                         <label htmlFor="fileInput">
-                            <i class="fa-solid fa-file iconPP"></i>
+                        <ion-icon name="images-outline"></ion-icon>
                         </label>
                         <input type="file" id="fileInput" style={{ display: "none" }} onChange={(e) => setFile(e.target.files[0])} />
 

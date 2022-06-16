@@ -26,6 +26,7 @@ function Register() {
   }
   return (
     <div className='register'>
+      <h1>ENREGISTREMENT</h1>
         <form action="" className="registerForm" onSubmit={handleSubmit}>
         <input type="text" placeholder='Pseudo' name="pseudo" autoFocus={true} autoComplete="off" 
         onChange={e => setPseudo(e.target.value)}/>
@@ -35,11 +36,10 @@ function Register() {
         onChange={e => setMdp(e.target.value)}/>
         <div className="button">
         <button className="registerButton" type='submit'>S'ENREGISTRER</button>
+        <button className="RegisterLoginButton" style={{marginBottom:"50px"}}><Link to="/connexion">CONNEXION</Link></button>
         </div>
         </form>
-        <div className="button">
-        <button className="RegisterLoginButton"><Link to="/connexion">CONNEXION</Link></button>
-      </div>
+       
        {error && <span style={{color:"red", display:"flex", justifyContent:"center", marginTop:"20px", fontSize:"14px", fontWeight:"600"}}>Une erreur a été détectée.</span>}
     
     </div>

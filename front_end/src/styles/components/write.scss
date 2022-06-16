@@ -1,7 +1,5 @@
 .write {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
+    margin-top: 20px;
 }
 
 // .writeForm {
@@ -9,68 +7,128 @@
 // }
 .writeForm {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+
     .submit {
+
         margin-top: 20px;
         padding: 10px;
         font-size: 24px;
-        background-color: $color7;
-        color: $color2;
-        font-family: $police2;
-        font-weight: bold;
-        border: none;
-        border-radius: 10%;
-   }
-}
-.formGroup {
- margin-left: 150px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- .writeImg{
-    display: flex;
-    width: 600px;
-}
-    .icon {
-        margin: 10px;
-        width: 25px;
-        height: 25px;
-        border: 3px solid $color2;
-        border-radius: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background: $color4;
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 5px 20px;
+        font-family: $police3;
         font-size: 25px;
-        color: $color1;
-    }
- .writeTitre {
-     font-family: $police2;
-     color: $color2;
-     font-weight: bold;
-     font-size: 24px;
-     border: none;
-     padding: 20px;
-     width: 50%;
-     height: 20px;
- }
- .writeInput {
-     margin-top: 20px;
-     font-size: 24px;
-     font-family: $police2;
-     font-weight: bold;
-     color: $color1;
-     border: 3px solid $color2;
-     padding: 10px;
-     width: 900px;
-     min-width:380px;
-     max-width: 900px;
-     height: 200px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color2;
+        cursor: pointer;
 
-     :focus {
-         outline: none;
-     }
- }
+        text-align: center;
+
+        text-shadow: 0 0 10px rgb(226, 156, 5);
+        animation: animate 5s linear infinite;
+
+        &:hover {
+            background: $color5;
+        }
+
+        @keyframes animate {
+            0% {
+                color: white;
+                text-shadow: none;
+            }
+
+            100% {
+                color: #fdefde;
+                text-shadow: 0 0 10px #95ECB0,
+                    0 0 20px #F3F98A,
+                    0 0 40px rgb(255, 187, 0),
+                    0 0 80px #F3F98A,
+                    0 0 160px rgb(255, 187, 0),
+                    0 0 400px #95ECB0;
+            }
+        }
+        
+    }
 }
 
+.formGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .writeImg {
+        margin-right: 50px;
+        display: flex;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    ion-icon {
+       margin-right: 50px;
+        color: $color6;
+        font-size: 4.5em;
+       
+        opacity: 0.5;
+        transition: 0.25s;
+        border-radius: 10px;
+        background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+        cursor: pointer;
+    }
+ion-icon:hover {
+    opacity: 1;
+}
+
+
+}
+
+.formGroupText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .writeTitre {
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-family: $police3;
+        font-size: 20px;
+        color: $color2;
+        
+        &:focus {
+            border: 2px solid #95ECB0;
+            outline: none;
+        }
+    }
+
+    .writeInput {
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-family: $police3;
+        font-size: 20px;
+        color: $color2;
+        
+
+        &:focus {
+            border: 2px solid #95ECB0;
+            outline: none;
+        }
+    }
+}
+
+.buttonWriteSubmit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}

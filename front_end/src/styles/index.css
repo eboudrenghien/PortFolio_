@@ -125,14 +125,14 @@ ion-icon {
   padding: 15px 10px;
 }
 .connexion li a {
-  color: hsl(333deg, 100%, 53%);
+  color: hsl(139deg, 70%, 75%);
 }
 .connexion li a:hover {
   color: white;
 }
 .connexion li:hover {
   border-radius: 10px;
-  background: linear-gradient(90deg, hsl(333deg, 100%, 53%) 0%, hsl(33deg, 94%, 57%) 100%);
+  background: linear-gradient(90deg, hsl(139deg, 70%, 75%) 0%, hsl(63deg, 90%, 76%) 100%);
 }
 
 .navBarImg {
@@ -175,6 +175,10 @@ ion-icon {
   background: rgba(255, 255, 255, 0.1);
 }
 .post .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   text-align: center;
 }
@@ -182,7 +186,6 @@ ion-icon {
   color: white;
   font-family: "Space Mono", monospace;
   text-shadow: 0 0 10px #95ECB0;
-  text-align: center;
 }
 .post .content p {
   font-family: "Space Mono", monospace;
@@ -209,6 +212,7 @@ ion-icon {
 .post .postImg {
   width: 190px;
   max-height: 300px;
+  border-radius: 10px;
 }
 
 .title {
@@ -288,7 +292,7 @@ footer p {
   color: rgb(255, 255, 255);
   font-weight: 600;
   text-align: center;
-  text-shadow: 0 0 10px rgb(226, 156, 5);
+  text-shadow: 0 0 10px hsl(139deg, 70%, 75%);
 }
 footer p ul {
   list-style: none;
@@ -317,7 +321,7 @@ footer p {
   color: rgb(255, 255, 255);
   font-weight: 600;
   text-align: center;
-  text-shadow: 0 0 10px rgb(226, 156, 5);
+  text-shadow: 0 0 10px hsl(139deg, 70%, 75%);
 }
 footer p ul {
   list-style: none;
@@ -364,76 +368,112 @@ footer p ul {
 }
 
 .write {
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
+  margin-top: 20px;
 }
 
 .writeForm {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 .writeForm .submit {
   margin-top: 20px;
   padding: 10px;
   font-size: 24px;
-  background-color: black;
+  background: #F3F98A;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 20px;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: rgb(255, 136, 0);
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: none;
-  border-radius: 10%;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
+}
+.writeForm .submit:hover {
+  background: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
+}
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
 }
 
 .formGroup {
-  margin-left: 150px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .formGroup .writeImg {
+  margin-right: 50px;
   display: flex;
-  width: 600px;
+  width: 300px;
+  border-radius: 10px;
 }
-.formGroup .icon {
-  margin: 10px;
-  width: 25px;
-  height: 25px;
-  border: 3px solid rgb(255, 136, 0);
-  border-radius: 10%;
+.formGroup ion-icon {
+  margin-right: 50px;
+  color: white;
+  font-size: 4.5em;
+  opacity: 0.5;
+  transition: 0.25s;
+  border-radius: 10px;
+  background: linear-gradient(90deg, hsl(139deg, 70%, 75%) 0%, hsl(63deg, 90%, 76%) 100%);
+  cursor: pointer;
+}
+.formGroup ion-icon:hover {
+  opacity: 1;
+}
+
+.formGroupText {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: 25px;
-  color: hsl(333deg, 100%, 53%);
 }
-.formGroup .writeTitre {
-  font-family: "Poiret One", cursive;
+.formGroupText .writeTitre {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
   color: rgb(255, 136, 0);
-  font-weight: bold;
-  font-size: 24px;
-  border: none;
-  padding: 20px;
-  width: 50%;
-  height: 20px;
 }
-.formGroup .writeInput {
-  margin-top: 20px;
-  font-size: 24px;
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  color: hsl(333deg, 100%, 53%);
-  border: 3px solid rgb(255, 136, 0);
-  padding: 10px;
-  width: 900px;
-  min-width: 380px;
-  max-width: 900px;
-  height: 200px;
-}
-.formGroup .writeInput :focus {
+.formGroupText .writeTitre:focus {
+  border: 2px solid #95ECB0;
   outline: none;
+}
+.formGroupText .writeInput {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  color: rgb(255, 136, 0);
+}
+.formGroupText .writeInput:focus {
+  border: 2px solid #95ECB0;
+  outline: none;
+}
+
+.buttonWriteSubmit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .settings {
@@ -452,32 +492,48 @@ footer p ul {
 
 .settingsPP {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 10px;
 }
 
-.iconPP {
-  margin-top: 30px;
-  font-size: 40px;
+ion-icon {
+  color: white;
+  font-size: 4.5em;
+  margin-left: 30px;
+  opacity: 0.5;
+  transition: 0.25s;
+  border-radius: 10px;
+  background: linear-gradient(90deg, hsl(139deg, 70%, 75%) 0%, hsl(63deg, 90%, 76%) 100%);
   cursor: pointer;
 }
 
-.settingsTitre {
+ion-icon:hover {
+  opacity: 1;
+}
+
+.settingsUpdateTitre {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-top: 5px;
   font-size: 18px;
-}
-.settingsTitre .settingsUpdateTitre {
+  margin-top: 50px;
+  text-align: center;
   font-family: "Space Mono", monospace;
-  font-size: 38px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
 }
-.settingsTitre .settingsDeleteTitre {
-  margin-top: 15px;
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
 }
 
 .settingsInfo {
@@ -489,37 +545,79 @@ footer p ul {
 }
 
 .settingsForm input {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 2px solid rgb(255, 136, 0);
-  background-color: black;
-  text-align: start;
-  font-size: 18px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
   color: rgb(255, 136, 0);
-  font-family: "Poppins", sans-serif;
 }
-.settingsForm input:hover {
-  background-color: hsl(333deg, 100%, 53%);
-  color: black;
-  font-family: "Poppins", sans-serif;
+.settingsForm input:focus {
+  border: 2px solid #95ECB0;
+  outline: none;
 }
 .settingsForm .settingsSubmit {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px;
   font-size: 24px;
-  background-color: black;
+  background: #F3F98A;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 20px;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: rgb(255, 136, 0);
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: 2px solid rgb(255, 136, 0);
   cursor: pointer;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
 }
 .settingsForm .settingsSubmit:hover {
-  background-color: hsl(333deg, 100%, 53%);
-  color: black;
+  background: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
+}
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
 }
 
+label {
+  font-family: "Space Mono", monospace;
+  margin-top: 30px;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
+}
 .loginForm {
   display: flex;
   flex-direction: column;
@@ -527,76 +625,68 @@ footer p ul {
   align-items: center;
 }
 .loginForm input {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 2px solid rgb(255, 136, 0);
-  background-color: black;
-  text-align: start;
-  font-size: 18px;
+  padding: 20px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
   color: rgb(255, 136, 0);
-  font-family: "Poppins", sans-serif;
 }
-.loginForm input:hover {
-  background-color: hsl(333deg, 100%, 53%);
-  color: black;
-  font-family: "Poppins", sans-serif;
+.loginForm input:focus {
+  border: 2px solid #95ECB0;
+  outline: none;
 }
 
-.button {
+button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.loginButton {
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 20px;
   font-size: 24px;
-  background-color: black;
+  background: #F3F98A;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 20px;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: rgb(255, 136, 0);
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: 2px solid rgb(255, 136, 0);
   cursor: pointer;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
 }
-.loginButton:hover {
-  background-color: hsl(333deg, 100%, 53%);
-  color: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
+button:hover {
+  background: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
 }
-.loginButton a {
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
+}
+button a {
   list-style-type: none;
   text-decoration: none;
-  color: rgb(255, 136, 0);
+  color: #95ECB0;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
 }
-
-.loginButton:disabled {
-  cursor: not-allowed;
-  background-color: #F3F98A;
-}
-
-.loginRegisterButton {
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 24px;
-  background-color: black;
-  color: rgb(255, 136, 0);
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: 2px solid rgb(255, 136, 0);
-  cursor: pointer;
-}
-.loginRegisterButton:hover {
-  background-color: hsl(333deg, 100%, 53%);
-}
-.loginRegisterButton a {
-  list-style-type: none;
-  text-decoration: none;
-  color: rgb(255, 136, 0);
-}
-.loginRegisterButton a:hover {
-  color: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
+button a:hover {
+  color: #F3F98A;
 }
 
 .registerForm {
@@ -606,20 +696,20 @@ footer p ul {
   align-items: center;
 }
 .registerForm input {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 2px solid rgb(255, 136, 0);
-  background-color: black;
-  text-align: start;
-  font-size: 18px;
+  padding: 10px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
   color: rgb(255, 136, 0);
-  font-family: "Poppins", sans-serif;
 }
-.registerForm input:hover {
-  background-color: hsl(333deg, 100%, 53%);
-  color: black;
-  font-family: "Poppins", sans-serif;
+.registerForm input:focus {
+  border: 2px solid #95ECB0;
+  outline: none;
 }
 
 .button {
@@ -629,138 +719,244 @@ footer p ul {
   align-items: center;
 }
 
-.registerButton {
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 24px;
-  background-color: black;
-  color: rgb(255, 136, 0);
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: 2px solid rgb(255, 136, 0);
-  cursor: pointer;
-}
-.registerButton:hover {
-  background-color: hsl(333deg, 100%, 53%);
-  color: black;
-}
-
-.RegisterLoginButton {
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 24px;
-  background-color: black;
-  color: rgb(255, 136, 0);
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: 2px solid rgb(255, 136, 0);
-  cursor: pointer;
-}
-.RegisterLoginButton:hover {
-  background-color: hsl(333deg, 100%, 53%);
-}
-.RegisterLoginButton a {
-  list-style-type: none;
-  text-decoration: none;
-  color: rgb(255, 136, 0);
-}
-.RegisterLoginButton a:hover {
-  color: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
-}
-
-.singlePost {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.singlePost .singleImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  margin-top: 150px;
-  margin-left: 30px;
-  background-color: black;
-}
-.singlePost .text {
-  display: flex;
-  margin: 0;
-  text-align: justify;
-  font-size: 18px;
-}
-.singlePost .text .singlePostTitre {
-  display: flex;
-  margin-top: 50px;
-  color: rgb(255, 136, 0);
-  font-family: "Space Mono", monospace;
-}
-.singlePost .text p {
-  font-family: "Poppins", sans-serif;
-}
-.singlePost .singlePostTitreInput {
-  margin-top: 50px;
-  padding: 15px;
-  color: rgb(255, 136, 0);
-  font-family: "Space Mono", monospace;
-  font-size: 28px;
-  border: none;
-  border-bottom: 2px solid #95ECB0;
-}
-.singlePost .singlePostTitreInput :focus {
-  outline: none;
-}
-.singlePost .commandes-icons {
-  display: flex;
-  font-size: 28px;
-  color: rgb(255, 136, 0);
-  cursor: pointer;
-}
-.singlePost .commandes-icons .icon {
-  margin-left: 10px;
-}
-.singlePost .singlePostInfo {
-  margin: 50px 5px;
+button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 24px;
+  background: #F3F98A;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 20px;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(255, 136, 0);
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
 }
-.singlePost .paragraphe {
+button:hover {
+  background: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
+}
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
+}
+button a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #95ECB0;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
+}
+button a:hover {
+  color: #F3F98A;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
+}
+.singlePost {
+  position: relative;
   display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-.singlePost .paragrapheText {
+
+.cardSinglePost {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 30px;
+}
+
+.text {
+  margin-bottom: auto;
+  position: relative;
+  display: flex;
+}
+
+.contentSinglePost {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contentSinglePost h1 {
+  margin-top: 0px;
+  margin-left: 20px;
+  color: white;
+  font-family: "Space Mono", monospace;
+  text-shadow: 0 0 10px #95ECB0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.commandes-icons {
+  padding: 10px 10px;
+  font-size: 20px;
+  color: rgb(255, 136, 0);
+  cursor: pointer;
+}
+.commandes-icons .icon {
+  margin-left: 10px;
+}
+
+.singlePostInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  min-width: 600px;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+.singlePostInfo p {
+  display: flex;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.date {
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.singleImg {
+  margin-top: 60px;
   width: 500px;
-  height: 150px;
-  justify-content: center;
-  padding: 20px;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  border-top: 2px solid #95ECB0;
-  border-right: 2px solid #95ECB0;
-}
-.singlePost .paragrapheText :focus {
-  outline: none;
+  max-height: 800px;
+  border-radius: 10px;
 }
 
 .singlePostButton {
   margin-top: 20px;
   padding: 10px;
-  background-color: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
   font-size: 24px;
-  background-color: black;
+  background: #F3F98A;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 20px;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: rgb(255, 136, 0);
-  font-family: "Poiret One", cursive;
-  font-weight: bold;
-  border: 2px solid rgb(255, 136, 0);
   cursor: pointer;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(226, 156, 5);
+  animation: animate 5s linear infinite;
 }
 .singlePostButton:hover {
-  background-color: hsl(333deg, 100%, 53%);
-  color: black;
+  background: linear-gradient(150deg, hsl(139deg, 70%, 75%) 0%, rgb(223, 236, 150) 50%, hsl(63deg, 90%, 76%) 100%);
+}
+@keyframes animate {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #fdefde;
+    text-shadow: 0 0 10px #95ECB0, 0 0 20px #F3F98A, 0 0 40px rgb(255, 187, 0), 0 0 80px #F3F98A, 0 0 160px rgb(255, 187, 0), 0 0 400px #95ECB0;
+  }
+}
+
+.singlePostTitreInput {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 20px;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(255, 136, 0);
+}
+.singlePostTitreInput:focus {
+  border: 2px solid #95ECB0;
+  outline: none;
+}
+
+.paragrapheText {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  color: rgb(255, 136, 0);
+}
+.paragrapheText:focus {
+  border: 2px solid #95ECB0;
+  outline: none;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #DAE2F8 0%, #D6A4A4 51%, #DAE2F8 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .single {

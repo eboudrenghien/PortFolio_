@@ -23,14 +23,13 @@ function Login() {
   }
   return (
     <div className='login'>
+      <h1>CONNEXION</h1>
       <form action="" className="loginForm" onSubmit={handleSubmit}>
         <input type="text" placeholder='Pseudo' name='pseudo' autoFocus={true} autoComplete="off" ref={pseudoRef} />
         <input type="password" placeholder='Mot de passe' name='mdp' autoFocus={true} autoComplete="off" ref={mdpRef} />
         <button className="loginButton" type='submit' disabled={isFetching}>CONNEXION</button>
-      </form>
-      <div className="button">
-        <button className="loginRegisterButton"><Link to="/senregistrer">S'ENREGISTRER</Link></button>
-      </div>
+       <button className="loginRegisterButton" style={{marginBottom:"50px"}}><Link to="/senregistrer">S'ENREGISTRER</Link></button></form>
+      
     </div>
   )
 }

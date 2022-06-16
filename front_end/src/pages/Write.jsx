@@ -8,7 +8,7 @@ function Write() {
     const [titre, setTitre] = useState("")
     const [contenu, setContenu] = useState("")
     const [file, setFile] = useState(null)
-    const {user} = useContext(Context)
+    const { user } = useContext(Context)
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -45,15 +45,18 @@ function Write() {
                             src={URL.createObjectURL(file)}
                             alt=""
                         />)}
-                    <label htmlFor="photo"><i className="icon fa-solid fa-plus" style={{ width: "25px" }}></i></label>
+                    <label htmlFor="photo"><ion-icon name="images-outline"></ion-icon></label>
                     <input type="file" name="ajouter une photo" id="photo" style={{ display: "none" }} onChange={(e) => setFile(e.target.files[0])} />
+                </div>
+                <div className="formGroupText">
                     <input className='writeTitre' name="articleTitre" type="text" placeholder='Saisir un titre' autoFocus={true} autoComplete="off" onChange={e => setTitre(e.target.value)} />
-                </div>
-                <div className="formGroup">
-                    <textarea placeholder='Saisir un texte' name="" className="writeInput" autoComplete='off' onChange={e => setContenu(e.target.value)} ></textarea>
-                </div>
-                <button type="submit" className='submit' name="envoyer">ENVOYER</button>
 
+
+                    <textarea placeholder='Saisir un texte' name="" className="writeInput" autoComplete='off' onChange={e => setContenu(e.target.value)} cols={'50'} rows={'10'}></textarea>
+
+                    <div className="buttonWriteSubmit">
+                        <button type="submit" className='submit' name="envoyer">ENVOYER</button>
+                    </div></div>
             </form>
         </div>
     )
