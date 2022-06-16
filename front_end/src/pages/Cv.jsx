@@ -2,7 +2,9 @@ import React from 'react'
 
 function Biographie() {
   return (
-    <div>Biographie</div>
+    <div className='biographie'>
+      div.
+    </div>
   )
 }
 
