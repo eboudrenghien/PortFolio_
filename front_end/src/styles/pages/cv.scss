@@ -1,0 +1,149 @@
+.biographie {
+    display: flex;
+    align-items: center;
+}
+
+.cvTitre {
+    margin-bottom: auto;
+    text-align: center;
+    font-family: $police3;
+    font-size: 40px;
+    color: $color6;
+    text-shadow: 0 0 10px rgb(226, 156, 5);
+    animation: animate 5s linear infinite;
+
+}
+
+
+@keyframes animate {
+    0% {
+        color: white;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fdefde;
+        text-shadow: 0 0 10px #95ECB0,
+            0 0 20px #F3F98A,
+            0 0 40px rgb(255, 187, 0),
+            0 0 80px #F3F98A,
+            0 0 160px rgb(255, 187, 0),
+            0 0 400px #95ECB0;
+    }
+}
+.informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-family: $police1;
+    font-weight: 600;
+    color: $color2;
+}
+
+p {
+    font-family: $police3;
+
+}
+
+.experiencesFormations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.experiences,
+.formations {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+
+    position: relative;
+    min-width: 280px;
+    max-width: 880px;
+    margin: 30px;
+
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+h3 {
+    font-family: $police1;
+    margin-top: 10px;
+    text-shadow: 0 0 10px rgb(226, 156, 5);
+    animation: animate 5s linear infinite;
+
+}
+
+
+@keyframes animate {
+    0% {
+        color: white;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fdefde;
+        text-shadow: 0 0 10px #95ECB0,
+            0 0 20px #F3F98A,
+            0 0 40px rgb(255, 187, 0),
+            0 0 80px #F3F98A,
+            0 0 160px rgb(255, 187, 0),
+            0 0 400px #95ECB0;
+    }
+
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 200px;
+    }
+
+    .contact {
+        margin-top: 10px;
+    }
+}
+
+.profilCompetences {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    position: relative;
+    min-width: 280px;
+    max-width: 350px;
+    margin: 30px;
+
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+
+    .competences {
+        margin-top: 30px;
+
+        .titre {
+            margin-top: 20px;
+            font-family: $police1;
+            font-weight: 600;
+            color: $color2;
+        }
+    }
+}
